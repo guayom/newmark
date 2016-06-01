@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Newmark Grubb Knight Frank Global Commercial Real Estate Services" %></title>
+
+    <%= partial "partials/metadata" %>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <%= stylesheet_link_tag :site %>
+
+    <script type="text/javascript" language="javaScript">
+			var ApplicationPath = '';
+		</script>
+
+		<script type="text/javascript" language="javaScript">
+			var HideDropDownNav = false;
+		</script>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <%= javascript_include_tag :jquery_rotate %>
+    <%= javascript_include_tag :common %>
+  </head>
+
+  <body class="container <%= current_page.data.body_class %>">
+    <%= partial "partials/page_header" %>
+    <%= partial "partials/mainnav" %>
+    <div class="main-wrap">
+      <div class="main">
+        <%= yield %>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <%= partial "partials/page_footer" %>
+    <%= partial "partials/end_script" %>
+  </body>
+</html>

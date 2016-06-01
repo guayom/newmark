@@ -1,0 +1,21 @@
+<div class="main-nav-wrap">
+  <div class="main-nav">
+    <ul id="navlist">
+      <% data.navigation.items.each do |item| %>
+        <li>
+          <a href="<%= item.url %>"><%= item.title %></a>
+          <% if item.submenu %>
+          <ul class="fly-out">
+            <% item.submenu.each do |subitem| %>
+                <li class="last">
+                    <a href="<%= subitem.url %>"><%= subitem.title %></a>
+                </li>
+            <% end %>
+          </ul>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>

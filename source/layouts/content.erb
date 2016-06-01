@@ -1,0 +1,23 @@
+<% wrap_layout :layout do %>
+  <div class="top-spacer"></div>
+  <%= partial "partials/inner_left_column" %>
+  <div class="main-column">
+		<div class="crumb-trail">
+			<span><a href="/default.aspx">Home</a> &gt; <a href="/home/about-our-firm.aspx">About Our Firm</a> &gt; Company Overview</span>
+		</div>
+		<div>
+			<div>
+				<h1 class="page-title">
+					<%= current_page.data.title %>
+				</h1>
+			</div>
+			<div class="body-txt">
+				<p class="highlight">
+          <%= current_page.data.highlight %>
+				</p>
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+  <%= partial "partials/inner_right_column" %>
+<% end %>

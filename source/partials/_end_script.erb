@@ -1,0 +1,33 @@
+<script type="text/javascript">
+  (function($){
+  $.fn.shuffle = function() {
+  return this.each(function(){
+  var items = $(this).children();
+  return (items.length)
+  ? $(this).html($.shuffle(items))
+  : this;
+  });
+  }
+
+  $.shuffle = function(arr) {
+  for(
+  var j, x, i = arr.length; i;
+  j = parseInt(Math.random() * i),
+  x = arr[--i], arr[i] = arr[j], arr[j] = x
+  );
+  return arr;
+  }
+  })(jQuery);
+
+  $(document).ready(function(){
+  $('.banner').fadeIn('slow');
+  $('.banner').shuffle();
+  $('.home-page-rotator').jshowoff({ speed: 7000, changeSpeed: 0, hoverPause: true });
+  $('.banner').jshowoff({ speed: 15000, changeSpeed: 1000, effect: 'fade' });
+  $('.jshowoff-slidelinks').addClass('clearfix');
+  $('.home-banner-wrap').css('background-image', 'none');
+  });
+</script>
+<!--[if IE 8]></div><![endif]-->
+<!--[if IE 7]></div><![endif]-->
+<!--[if IE 6]></div><![endif]-->
