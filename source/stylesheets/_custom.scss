@@ -3,3 +3,30 @@
   margin: 0 auto;
   width: 980px;
 }
+.page-header-right {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    text-align: right;
+}
+.social-footer-wrap     { overflow: hidden; height: 39px;}
+
+.f-linkedin, .f-facebook, .f-twitter, .f-youtube, .f-google
+{
+    float: left;
+    display: block;
+    margin: 1px 0 0 10px;
+    width: 23px;
+    text-indent: 9999px;
+    height: 23px;
+}
+
+.f-facebook             { background: url(../images/bkg-social-buttons.png) no-repeat 0 0px; }
+.f-twitter              { background: url(../images/bkg-social-buttons.png) no-repeat -33px 0; }
+.f-linkedin             { background: url(../images/bkg-social-buttons.png) no-repeat -66px 0px; }
+.f-google               { background: url(../images/bkg-social-buttons.png) no-repeat -99px 0px; }
+
+.f-facebook:hover       { background: url(../images/bkg-social-buttons.png) no-repeat 0px -28px; }
+.f-twitter:hover        { background: url(../images/bkg-social-buttons.png) no-repeat -33px -28px ; }
+.f-linkedin:hover       { background: url(../images/bkg-social-buttons.png) no-repeat -66px -28px; }
+.f-google:hover         { background: url(../images/bkg-social-buttons.png) no-repeat -99px -28px; }
