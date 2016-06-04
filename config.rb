@@ -45,7 +45,15 @@ helpers do
   def nav_active(path)
     current_page.path == path ? {:class => "active"} : {}
   end
+  # Returns all pages under a certain directory.
+  def sub_pages(dir)
+    sitemap.resources.select do |resource|
+      resource.path.start_with?(dir)
+    end
+  end
 end
+
+
 
 # Build-specific configuration
 configure :build do

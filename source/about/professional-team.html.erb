@@ -1,0 +1,45 @@
+---
+title: "Professional Team"
+body_class: content
+category: about
+layout: content
+team:
+  -
+    nombre: "Carlos R. Robles"
+    puesto: "Managing Director / President"
+  -
+    nombre: "Pedro E. Sanchez"
+    puesto: "Market Analysis / Valuations"
+  -
+    nombre: "Frank Quirós"
+    puesto: "Market Analysis / Real Estate Consultant"
+  -
+    nombre: "Manuel Calvo"
+    puesto: Appraiser
+  -
+    nombre: "David Behar"
+    puesto: "Real Estate Consultant"
+  -
+    nombre: "Adrián Rodríguez"
+    puesto: "Real Estate Consultant"
+  -
+    nombre: "Diego Ouellette"
+    puesto: "Real Estate Consultant / Investment / Hospitality"
+  -
+    nombre: "Alejandro Mazariegos"
+    puesto: "Capital Markets / Private Money Sources / Real Estate Consultant"
+  -
+    nombre: "Theo Mills"
+    puesto: "Financial / Investment / Capital Markets"
+  -
+    nombre: "Juan Robles"
+    puesto: "Architect, LEED AP / Owner Robles Arq. Studio"
+  -
+    nombre: "Roxana Ruiz"
+    puesto: "Executive Support"
+---
+<ul>
+<% current_page.data.team.each do |member| %>
+  <li><%= member.nombre %> - <i><%= member.puesto %></i></li>
+<% end %>
+</ul>

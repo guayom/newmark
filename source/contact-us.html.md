@@ -4,11 +4,13 @@ body_class: content
 title: Contact Us
 category: contact
 ---
-Email Address:
+__Email Address:__
 info@ngcentralamerica.com
-Address:
+
+__Address:__
 Madrid Office Center, 3rd floor. Pozos, Santa Ana
-Phone:
+
+__Phone:__
 (506) 2203-5171
 Fax:
 (506) 2203-5171

@@ -42,7 +42,5 @@ items:
         url: "/services/costa-rica-housing"
       - title: "Value Added Services"
         url: "/services/value-added-services"
-      - title: "REALTrac™"
-        url: "/services/real-trac"
   - title: Contact Us
     url: "/contact-us"

@@ -1,7 +1,7 @@
 ---
 index.html.erb: "/index.html.erb"
-about:
-  professional-team.html.md: "/about/professional-team.html.md"
+about: {}
+contact-us.html.md: "/contact-us.html.md"
 partials: {}
 privacy-policy.html.md: "/privacy-policy.html.md"
 services:
