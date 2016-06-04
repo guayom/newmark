@@ -1,5 +1,16 @@
 <div class="left-column">
   <div class="subnav">
+    <a class="title" href="#"><%= current_page.url.split('/')[1].capitalize %></a>
+
+    <ul id="navID" class="navlist">
+      <% sub_pages(current_page.url.split('/')[1]).each do |resource| %>
+        <li>
+          <a href="<%= resource.url %>"><%= resource.data.title %></a>
+        </li>
+      <% end %>
+    </ul>
+    <br/>
+    ---
     <a class="title" href="/home/about-our-firm.aspx">About Our Firm</a> <!-- Currently in "repeater"-->
 
     <ul id="navID" class="navlist">
