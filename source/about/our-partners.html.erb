@@ -1,0 +1,44 @@
+---
+title: Our Partners
+layout: content
+body_class: content
+category: about
+layout: content
+
+partners:
+ -
+   name: "Newmark Grubb Knight Frank"
+   imagen: nmkf
+   url: www.ngkf.com
+ -
+   name: "BGC Newmark Grubb Knight Frank"
+   imagen: bgcc
+   url: www.bgcpartners.com
+ -
+   name: "CCRE Cantor Commercial Real Estate"
+   imagen: ccre
+   url: www.cantorcre.com
+ -
+   name: "Cantor Fritzgerald Investment Banking"
+   imagen: cantor
+   url: www.cantor.com
+---
+<p>Newmark Grubb Knight Frank is one of the three largest companies in the world of corporate real estate services. Together with its partners based in London and other alliances around the world, NGKF has 12,000 professionals operating in more than 370 offices on six continents.</p>
+
+<p>NGKF is a leading specialist in providing corporate real estate solutions through an extensive global platform of integrated services such as tenant representation, representation of owners, global corporate services, sales, investment opportunities, capital markets (equity financing and debt), valuations, consulting , project management, property management, industry, logistics, hotels, land, and commercial centers.</p>
+
+<br/>
+
+<ul class="partners">
+  <% current_page.data.partners.each do |p| %>
+  <li>
+    <div class="half">
+      <img src="/images/partners/<%= p.imagen %>.jpg" alt="<%= p.name %>" />
+    </div>
+    <div class="half">
+      <h4><%= p.name %></h4>
+      <a href="http://<%= p.url %>" target="_blank" rel=noopener rel=noreferrer /><%= p.url %></a>
+    </div>
+  </li>
+  <% end %>
+</ul>

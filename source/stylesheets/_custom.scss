@@ -3,3 +3,23 @@
   margin: 0 auto;
   width: 980px;
 }
+.partners{
+  margin: 0;
+  padding: 0;
+  li{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    clear: both;
+    .half{
+      width: 50%;
+      display: block;
+      float: left;
+      margin-bottom: 30px;
+      h4{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
