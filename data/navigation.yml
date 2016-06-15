@@ -4,8 +4,16 @@ items:
   - title: "About Us"
     url: "/about/about-our-firm"
     submenu:
+      - title: "About Our Firm"
+        url: "/about/about-our-firm/"
+      - title: "Coverage"
+        url: "/about/our-partners/"
+      - title: "History"
+        url: "/about/history/"
       - title: "Professional Team"
         url: "/about/professional-team"
+      - title: "Our Partners"
+        url: "/about/our-partners/"
   - title: "Our Services"
     url:
     submenu:
