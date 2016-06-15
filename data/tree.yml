@@ -1,11 +1,11 @@
 ---
-index.html.erb: "/index.html.erb"
-about: {}
-contact-us.html.md: "/contact-us.html.md"
+index.html.erb: /index.html.erb
+about:
+  professional-team.html.md: /about/professional-team.html.md
 partials: {}
-privacy-policy.html.md: "/privacy-policy.html.md"
+privacy-policy.html.md: /privacy-policy.html.md
 services:
-  asset-property-portfolio-management.html.md: "/services/asset-property-portfolio-management.html.md"
+  asset-property-portfolio-management.html.md: /services/asset-property-portfolio-management.html.md
   brokerage:
     hotels-hospitality.html.md: "/services/brokerage/hotels-hospitality.html.md"
     industrial.html.md: "/services/brokerage/industrial.html.md"
