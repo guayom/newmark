@@ -5,10 +5,9 @@
       <a href="/contact-us">Contact Us</a>
     </div>-->
     <div class="social-header-wrap">
-			<a target="_blank" title="Visit our profile page on Google+" href="http://google.com/+ngkf" class="f-google">Google+</a>
-			<a target="_blank" title="Become a fan of Newmark Grubb Knight Frank on Facebook" href="http://www.facebook.com/Newmarkkf" class="f-facebook">Facebook</a>
-			<a target="_blank" title="Follow us on Twitter" href="http://twitter.com/ngkf" class="f-twitter">Twitter</a>
-			<a target="_blank" title="Visit our profile page on LinkedIn" href="http://www.linkedin.com/company/newmark-grubb-knight-frank" class="f-linkedin">Linkedin</a>
+      <% data.redes.each do |key, value| %>
+        <a target="_blank" title="Follow us on <%= key %>" href=" <%= value %>" class="f-<%= key %>"><%= key %></a>
+      <% end %>
 		</div>
     <!--<div class="search">
       <input type="text" value="Search" maxlength="40" id="txtSearch" class="text-search" autocomplete="Off" onfocus="document.getElementById('txtSearch').value = ''" onkeydown="if ((event.which &amp;&amp; event.which == 13) || (event.keyCode &amp;&amp; event.keyCode == 13)) { if (document.getElementById('btnSearch') &amp;&amp; typeof(document.getElementById('btnSearch').click) != &quot;undefined&quot;){document.getElementById('btnSearch').click();return false;}else eval(document.getElementById('btnSearch').href);} else return true;"> <a id="btnSearch" class="search-button" href="#">Search</a>
