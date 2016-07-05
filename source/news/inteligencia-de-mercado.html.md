@@ -3,7 +3,7 @@ layout: content
 title: 'Reporte Newmark Grubb: Inteligencia de Mercado II Trimestre 2016'
 category: news
 body_class: news
-date: {}
+date: 2016-06-04
 published: true
 ---
 ## **¡LO ÚLTIMO EN LOS SECTORES DE OFICINAS, CENTROS COMERCIALES E INDUSTRIAL!**
@@ -50,6 +50,7 @@ Los Community Centers mostraron el segundo mayor incremento (2,16%) debido a que
 Por su parte, el producto Regional Center registra el mayor incremento desde finales del año 2015 debido al ingreso del proyecto City Mall Alajuela y más recientemente por Expresso Desamparados.
 
 **Overview de Mercado Comercial**
+
 Inventario Construido (m2): 1.798.261<br/>
 Tasa de Disponibilidad: 8,64%<br/>
 Precio Promedio: US$22,13

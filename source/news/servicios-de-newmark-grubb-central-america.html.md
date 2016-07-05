@@ -3,7 +3,7 @@ layout: content
 title: ¡Conozca el portafolio de servicios de Newmark Grubb en Centroamérica!
 category: news
 body_class: news
-date: {}
+date: 2016-06-04
 published: true
 ---
 ![¡Conozca el portafolio de servicios de Newmark Grubb en Centroamérica!](/images/news-images/foto-3.png)

@@ -1,9 +1,10 @@
 ---
 index.html.erb: "/services/index.html.erb"
 about: {}
-contact-us.html.md: "/contact-us.html.md"
-news-images:
-  newmark-grubb-central-america-estrena-medios-digitales.html.md: "/news-images/newmark-grubb-central-america-estrena-medios-digitales.html.md"
+news:
+  inteligencia-de-mercado.html.md: "/news/inteligencia-de-mercado.html.md"
+  newmark-grubb-central-america-estrena-medios-digitales.html.md: "/news/newmark-grubb-central-america-estrena-medios-digitales.html.md"
+  servicios-de-newmark-grubb-central-america.html.md: "/news/servicios-de-newmark-grubb-central-america.html.md"
 partials: {}
 privacy-policy.html.md: "/privacy-policy.html.md"
 services:
