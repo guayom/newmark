@@ -10,7 +10,8 @@ published: true
 
 ## Entre sus novedades destacan el project management y la división “verde” para proyectos y certificaciones sostenibles
 
-**_Por Comunicación Newmark Grubb Central America (comunicacion@ngcentralamerica.com)_**
+**_Por Comunicación Newmark Grubb Central America_**<br/>
+<a href="mailto:comunicacion@ngcentralamerica.com">comunicacion@ngcentralamerica.com</a>
 
 _(San José, Costa Rica, 4 de julio de 2016)._ Desde la **correduría de propiedades comerciales, industriales, hoteleras y corporativas, hasta el manejo de proyectos, análisis de mercados, consultoría y asesoría para diseños y certificaciones sostenibles**, NEWMARK GRUBB CENTRAL AMERICA es el proveedor de servicios inmobiliarios más completo de Costa Rica y Centroamérica.
 
