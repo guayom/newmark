@@ -10,7 +10,7 @@ published: true
 
 ![Newmark Grubb Central America Inteligencia de Mercado II Trimestre, 2016](/news/Inteligencia-de-mercado-NG-II-T-2016.jpg)
 
-_Oficinas se acercan al punto de equilibrio; plazas comerciales siguen creciendo y sector industrial desvela clave de su éxito_
+## _Oficinas se acercan al punto de equilibrio; plazas comerciales siguen creciendo y sector industrial desvela clave de su éxito_
 
 **_Por Comunicación Newmark Grubb Central America_**<br/>
 <a href="mailto:comunicacion@ngcentralamerica.com">comunicacion@ngcentralamerica.com</a>
