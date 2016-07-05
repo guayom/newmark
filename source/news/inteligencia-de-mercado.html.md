@@ -8,7 +8,7 @@ published: true
 ---
 ![Reporte Newmark Grubb Central America: Inteligencia de Mercado II Trimestre 2016]
 ## **Lo último en los sectores de oficinas, centros comerciales e industrial**
-(/images/news-images/foto-4.png)
+
 _Oficinas se acercan al punto de equilibrio; plazas comerciales siguen creciendo y sector industrial desvela clave de su éxito_
 
 **_Por Comunicación Newmark Grubb Central America_**
@@ -17,7 +17,7 @@ _Oficinas se acercan al punto de equilibrio; plazas comerciales siguen creciendo
 
 Usted puede solicitar los estudios completos al equipo de ventas y asesores de NEWMARK GRUBB CENTRAL AMERICA  llamando al 2203-5171. _La firma también realiza estudios a la medida de sus necesidades en cualquiera de los sectores._
 
-Mientras tanto, entérese de las principales actualizaciones aquí:
+_Mientras tanto, entérese de las principales actualizaciones aquí:_
 
 ##OFICINAS: Disponibilidad se acerca al punto de equilibrio
 
