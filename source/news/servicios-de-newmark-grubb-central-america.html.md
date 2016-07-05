@@ -7,7 +7,7 @@ date: {}
 published: true
 ---
 ![¡Conozca el portafolio de servicios de Newmark Grubb en Centroamérica!](/images/news-images/foto-3.png)
-## **Entre sus novedades destacan el project management y la división “verde” para proyectos y certificaciones sostenibles**
+## _Entre sus novedades destacan el project management y la división “verde” para proyectos y certificaciones sostenibles_
 
 **_Por Comunicación Newmark Grubb Central America_**
 
