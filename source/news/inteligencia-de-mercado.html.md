@@ -1,23 +1,25 @@
 ---
 layout: content
-title: "Reporte newmark grubb: Inteligencia de mercado"
+title: 'Reporte newmark grubb: Inteligencia de mercado'
 category: news
 body_class: news
-date: 2016-07-05
+date: {}
+published: true
 ---
-![Reporte newmark grubb: Inteligencia de mercado](/images/news-images/foto-4.png)
-Lo último en los sectores de oficinas, centros comerciales e industrial
+![Reporte Newmark Grubb Central America: Inteligencia de Mercado II Trimestre 2016]
+## **Lo último en los sectores de oficinas, centros comerciales e industrial**
+(/images/news-images/foto-4.png)
 _Oficinas se acercan al punto de equilibrio; plazas comerciales siguen creciendo y sector industrial desvela clave de su éxito_
 
 **_Por Comunicación Newmark Grubb Central America_**
 
-(San José, Costa Rica, 4 de julio de 2016). La segunda edición de análisis trimestrales de mercado, a cargo NEWMARK GRUBB CENTRAL AMERICA para el 2016, ya se encuentra disponible en los sectores de oficinas, centros comerciales y proyectos industriales de Costa Rica.
+**(San José, Costa Rica, 4 de julio de 2016).** La segunda edición de análisis trimestrales de mercado, a cargo NEWMARK GRUBB CENTRAL AMERICA para el 2016, ya se encuentra disponible en los sectores de oficinas, centros comerciales y proyectos industriales de Costa Rica.
 
-Usted puede solicitar los estudios completos al equipo de ventas y asesores de NEWMARK GRUBB CENTRAL AMERICA  llamando al 2203-5171. _Además, puede solicitar estudios a la medida de sus necesidades, incluso en el sector residencial_.
+Usted puede solicitar los estudios completos al equipo de ventas y asesores de NEWMARK GRUBB CENTRAL AMERICA  llamando al 2203-5171. _La firma también realiza estudios a la medida de sus necesidades en cualquiera de los sectores._
 
-Mientras tanto, entérese de las principales actualizaciones aquí.
+Mientras tanto, entérese de las principales actualizaciones aquí:
 
-##Oficinas: Disponibilidad se acerca al punto de equilibrio
+##OFICINAS: Disponibilidad se acerca al punto de equilibrio
 
 La desaceleración de entrada de nuevo inventario al mercado de oficinas puede parecer una noticia negativa, pero en realidad se trata de una buena nueva.
 
@@ -29,13 +31,13 @@ No obstante, los expertos de NEWMARK GRUBB CENTRAL AMERICA advierten que la desa
 
 Actualmente, todas las clases se ubican en el punto de equilibrio a sobreoferta leve, salvo por las clases A+ y C que sí cuentan con una tasa de disponibilidad superior al 20%.
 
-###OVERVIEW DE MERCADO DE OFICINAS
+**Overview de Mercado de Oficinas**
 
 Inventario Construido (m2): 1.821.094<br/>
 Tasa de Disponibilidad: 13,96%<br/>
 Precio Promedio: US$17,70
 
-##Centros comerciales: Community Centers a la cabeza del crecimiento
+##CENTROS COMERCIALES: Community Centers a la cabeza del crecimiento
 
 Los inmuebles comerciales conocidos como Community Centers, cuyas construcciones oscilan entre los 1.000 m2 y los 20.000 m2, encabezan el crecimiento de la oferta del sector según el último análisis de NEWMARK GRUBB CENTRAL AMERICA.
 
@@ -45,12 +47,12 @@ Los Community Centers mostraron el segundo mayor incremento (2,16%) debido a que
 
 Por su parte, el producto Regional Center registra el mayor incremento desde finales del año 2015 debido al ingreso del proyecto City Mall Alajuela y más recientemente por Expresso Desamparados.
 
-###OVERVIEW DE MERCADO COMERCIAL
+**Overview de Mercado Comercial**
 Inventario Construido (m2): 1.798.261<br/>
 Tasa de Disponibilidad: 8,64%<br/>
 Precio Promedio: US$22,13
 
-##Sector industrial: el secreto del éxito
+##SECTOR INDUSTRIAL: ¿Cuál es el secreto de su éxito?
 
 De acuerdo con el último reporte de NEWMARK GRUBB CENTRAL AMERICA el mercado industrial costarricense se muestra en un punto muy saludable de disponibilidad, pues la tasa ha decrecido a menos de un 5%.
 
@@ -60,7 +62,7 @@ De esta manera, los desarrolladores se aseguran inquilinos a largo plazo y asume
 
 Si las condiciones se mantienen estables, se espera que el mercado siga creciendo sin mayores cambios en la disponibilidad. Además, los nuevos proyectos podrán ser bien recibidos como alternativa para las estructuras antiguas que ya no cuentan con los requisitos mínimos de ubicación y eficiencia que exigen las empresas modernas.
 
-###OVERVIEW DE MERCADO INDUSTRIAL
+**Overview de Mercado Industrial**
 
 Inventario Construido (m2): 5.215.343<br/>
 Tasa de Disponibilidad: 4,18%<br/>
