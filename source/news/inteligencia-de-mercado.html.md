@@ -20,7 +20,7 @@ Usted puede solicitar los estudios completos al equipo de ventas y asesores de N
 
 _Mientras tanto, entérese de las principales actualizaciones aquí:_
 
-### OFICINAS: Disponibilidad se acerca al punto de equilibrio
+## OFICINAS: Disponibilidad se acerca al punto de equilibrio
 
 La desaceleración de entrada de nuevo inventario al mercado de oficinas puede parecer una noticia negativa, pero en realidad se trata de una buena nueva.
 
