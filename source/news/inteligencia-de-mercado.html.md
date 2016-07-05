@@ -12,8 +12,8 @@ published: true
 
 _Oficinas se acercan al punto de equilibrio; plazas comerciales siguen creciendo y sector industrial desvela clave de su éxito_
 
-**_Por Comunicación Newmark Grubb Central America
-comunicacion@ngcentralamerica.com_**
+**_Por Comunicación Newmark Grubb Central America_**
+_**comunicacion@ngcentralamerica.com**_
 
 _(San José, Costa Rica, 4 de julio de 2016)._ La segunda edición de análisis trimestrales de mercado, a cargo NEWMARK GRUBB CENTRAL AMERICA para el 2016, ya se encuentra disponible en los sectores de oficinas, centros comerciales y proyectos industriales de Costa Rica.
 
