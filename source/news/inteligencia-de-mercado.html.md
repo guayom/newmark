@@ -14,7 +14,7 @@ _Oficinas se acercan al punto de equilibrio; plazas comerciales siguen creciendo
 
 **_Por Comunicación Newmark Grubb Central America_**
 
-**(San José, Costa Rica, 4 de julio de 2016).** La segunda edición de análisis trimestrales de mercado, a cargo NEWMARK GRUBB CENTRAL AMERICA para el 2016, ya se encuentra disponible en los sectores de oficinas, centros comerciales y proyectos industriales de Costa Rica.
+_(San José, Costa Rica, 4 de julio de 2016)._ La segunda edición de análisis trimestrales de mercado, a cargo NEWMARK GRUBB CENTRAL AMERICA para el 2016, ya se encuentra disponible en los sectores de oficinas, centros comerciales y proyectos industriales de Costa Rica.
 
 Usted puede solicitar los estudios completos al equipo de ventas y asesores de NEWMARK GRUBB CENTRAL AMERICA  llamando al 2203-5171. _La firma también realiza estudios a la medida de sus necesidades en cualquiera de los sectores._
 
