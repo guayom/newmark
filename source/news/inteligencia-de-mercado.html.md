@@ -1,6 +1,6 @@
 ---
 layout: content
-title: 'Reporte newmark grubb: Inteligencia de mercado'
+title: 'Reporte Newmark Grubb: Inteligencia de Mercado II Trimestre 2016'
 category: news
 body_class: news
 date: {}
