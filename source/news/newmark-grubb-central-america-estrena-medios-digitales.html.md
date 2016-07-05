@@ -7,9 +7,10 @@ date: {}
 published: true
 ---
 ![Newmark Grubb Central America estrena medios digitales](/images/news-images/redes-sociales.png "Logo Title Text 1")
-_Nuevo sitio web, redes sociales y boletín mensual para clientes forman del fortalecimiento de servicios de la consolidada empresa_
+Nuevo sitio web, redes sociales y boletín mensual para clientes forman del fortalecimiento de servicios de la consolidada empresa###
 
-**Por Comunicación Newmark Grubb Central America**__
+
+**Por Comunicación Newmark Grubb Central America**
 
 _(San José, Costa Rica, 4 de julio de 2016)._ La empresa especializada en consultoría, inversiones y proyectos inmobiliarios, NEWMARK GRUBB CENTRAL AMERICA, estrena a partir de este lunes 4 de julio un [un nuevo sitio web](http://ngcentralamerica.com/), presencia en las redes sociales [Facebook](https://www.facebook.com/Newmark-Grubb-Central-America-287500871601472) y [Linkedin](https://www.linkedin.com/company/newmark-grubb-central-america) y un _boletín mensual de noticias_ exclusivo para sus clientes.
 
