@@ -7,7 +7,7 @@ date: {}
 published: true
 ---
 ![Newmark Grubb Central America estrena medios digitales](/images/news-images/redes-sociales.png "Logo Title Text 1")
-_Nuevo sitio web, redes sociales y boletín mensual para clientes forman del fortalecimiento de servicios de la consolidada empresa_
+_Nuevo sitio web, redes sociales y boletín mensual para clientes forman parte del fortalecimiento de servicios de la consolidada empresa_
 
 
 **Por Comunicación Newmark Grubb Central America**
