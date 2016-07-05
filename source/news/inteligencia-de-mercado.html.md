@@ -6,7 +6,7 @@ body_class: news
 date: {}
 published: true
 ---
-## **¡LO ÚLTIMO EN LOS SECTORES DE OFICINAS, CENTROS COMERCIALES E INDUSTRIAL**
+## **¡LO ÚLTIMO EN LOS SECTORES DE OFICINAS, CENTROS COMERCIALES E INDUSTRIAL!**
 
 ![Newmark Grubb Central America Inteligencia de Mercado II Trimestre, 2016](/news/Inteligencia-de-mercado-NG-II-T-2016.jpg)
 
