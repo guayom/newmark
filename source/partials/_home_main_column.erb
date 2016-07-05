@@ -216,42 +216,19 @@
         Recent News
       </h2>
       <div class="cross-ref-group-body">
-        <div class="cross-ref news">
-          <div class="date">
-            01.16.2013
-          </div>
-          <h4>
-            <a href="/home/media-center/press-releases.aspx?d=5324&amp;title=Newmark_Grubb_Knight_Frank_Hotels_Expands_With_Key_Hires">Newmark Grubb Knight Frank Hotels Expands With Key Hires</a>
-          </h4>
-          <div class="clear"></div>
-        </div>
-        <div class="cross-ref news">
-          <div class="date">
-            01.07.2013
-          </div>
-          <h4>
-            <a href="/home/media-center/press-releases.aspx?d=5299&amp;title=Newmark_Grubb_Knight_Frank_Unveils_2013_Commercial_Real_Estate_Forecast__for_Center_City_Philadelphia">Newmark Grubb Knight Frank Unveils 2013 Commercial Real Estate Forecast for Center City Philadelphia</a>
-          </h4>
-          <div class="clear"></div>
-        </div>
-        <div class="cross-ref news">
-          <div class="date">
-            01.02.2013
-          </div>
-          <h4>
-            <a href="/home/media-center/press-releases.aspx?d=5288&amp;title=Newmark_Grubb_Knight_Frank_Parent,_BGC_Partners,_Inc.,__Acquires_Frederick_Ross_Company_In_Denver">Newmark Grubb Knight Frank Parent, BGC Partners, Inc., Acquires Frederick Ross Company In Denver</a>
-          </h4>
-          <div class="clear"></div>
-        </div>
-        <div class="cross-ref news">
-          <div class="date">
-            01.02.2013
-          </div>
-          <h4>
-            <a href="/home/media-center/press-releases.aspx?d=5289&amp;title=Newmark_Grubb_Knight_Frank_Parent,_BGC_Partners,_Inc.,_Acquires_Smith_Mack_in_Philadelphia">Newmark Grubb Knight Frank Parent, BGC Partners, Inc., Acquires Smith Mack in Philadelphia</a>
-          </h4>
-          <div class="clear"></div>
-        </div>
+        <% sub_pages('news').each do |resource| %>
+          <% unless resource.path.include?('index.html') %>
+            <div class="cross-ref news">
+              <div class="date">
+                <%= resource.data.date %>
+              </div>
+              <h4>
+                <a href="<%= resource.url %>"><%= resource.data.title %></a>
+              </h4>
+              <div class="clear"></div>
+            </div>
+          <% end %>
+        <% end %>
       </div>
     </div>
   </div>

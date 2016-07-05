@@ -1,15 +1,7 @@
 <div class="home-banner-wrap">
   <div class="banner">
-    <img src="/images/gallery/banners/bangkok.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/beijing.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/canada.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/chicago.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/europe.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/hongkong.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/london.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/moscow.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/newyork.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/sanfrancisco.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
-    <img src="/images/gallery/banners/sydney.jpg" width="980" height="200" border="0" alt="NKF Home Banner">
+    <% data.slider.imagenes.each do |imagen| %>
+      <img src="/images/<%= data.slider.src %>/<%= imagen %>" width="980" height="300" border="0" alt="NKF Home Banner">
+    <% end %>
   </div>
 </div>

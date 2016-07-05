@@ -81,7 +81,7 @@ body         { text-align: center; background: #e4e2e1; }
 /* -------------------- =Home banner --------------------*/
 
 .home .banner       { display: none; margin: 0; }
-.home-banner-wrap   { overflow: hidden; margin: 0 auto; padding: 0; height: 200px; width: 980px; background: #fff url(../images/ajax-loader2.gif) no-repeat 50%; }
+.home-banner-wrap   { overflow: hidden; margin: 0 auto; padding: 0; height: 300px; width: 980px; background: #fff url(../images/ajax-loader2.gif) no-repeat 50%; }
 
 .home-banner-wrap .jshowoff               { margin: 0 0 0 0; width: auto; height: 1px; background: #fff; }
 .home-banner-wrap .jshowoff-slidelinks a  { display: none; }
@@ -399,7 +399,7 @@ ul.fly-out
 	padding: 8px 20px 8px 23px;
 	font-size: 16px;
 	line-height: 1em;
-	background: #edede4 url(../images/gallery/site_gfx/bkg_filter_title.gif) 5px 50% no-repeat; 
+	background: #edede4 url(../images/gallery/site_gfx/bkg_filter_title.gif) 5px 50% no-repeat;
 }
 .filters p                 { margin: 0 0 .2em; }
 .filters ul                { float: left; width: 200px; margin: 0; }

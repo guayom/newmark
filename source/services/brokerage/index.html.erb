@@ -1,0 +1,11 @@
+---
+layout: content
+body_class: content
+title: Borkerage
+category: services
+---
+<ul>
+<% sub_pages('services/brokerage').each do |resource| %>
+	<li><%= link_to resource.data.title, resource.url %></li>
+<% end %>
+</ul>

@@ -51,6 +51,13 @@ helpers do
       resource.path.start_with?(dir)
     end
   end
+  def brokerage_pages(dir)
+    sitemap.resources.select do |resource|
+      unless resource.path.include?('index.html')
+        resource.path.include?(dir)
+      end
+    end
+  end
 end
 
 

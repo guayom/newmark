@@ -1,0 +1,21 @@
+---
+layout: content
+body_class: content
+title: News
+category: news
+---
+<div class="news">
+  <div class="list">
+    <% sub_pages('news').each do |resource| %>
+      <% unless resource.path.include?('index.html') %>
+        <div class="odd">
+      		<div class="date"><strong><%= resource.data.date %></strong></div>
+      		<div class="detail-info">
+      			<div><a class="detail-link" href="<%= resource.url %>"><%= resource.data.title %></a></div>
+      		</div>
+      		<div class="clear"></div>
+      	</div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
