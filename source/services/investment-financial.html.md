@@ -3,8 +3,9 @@ layout: content
 body_class: content
 title: Investment / Financial
 category: services
+published: true
 ---
-Newmark Grubb Central America works with institutions and private investors seeking to maximize their real estate position and portfolio strategy. Newmark Grubb firms complete more than $10 billion in investment sales annually in properties ranging from portfolios of owned real estate and non-performing loans, to single-tenant net leases, multi-family properties, hotels, industrial parks and corporate headquarters.
+Newmark Grubb Central America works with institutions and private investors seeking to maximize their real estate position and portfolio strategy. Newmark Grubb Knight Frank firms complete more than $10 billion in investment sales annually in properties ranging from portfolios of owned real estate and non-performing loans, to single-tenant net leases, multi-family properties, hotels, industrial parks and corporate headquarters.
 
 Newmark Grubb Central America maintains ongoing relationships with buyers of investment and development properties, and continually tracks buyer activity along product type, value range and geographic area.
 
