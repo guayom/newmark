@@ -3,6 +3,7 @@ layout: content
 body_class: content
 title: Corporate Solutions
 category: services
+weight: 5
 ---
 Every corporate client faces a unique set of business and real estate challenges. That is why through Newmark Grubb Knight Frank, we make it our business to understand every aspect of your needs and expectations, current and future. Clients have a primary point of contact - a senior corporate services executive (CSE) - who leverages all our enterprise resources wherever a client needs them around the world.
 

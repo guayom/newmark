@@ -1,26 +1,15 @@
 <div class="left-column">
   <div class="subnav">
     <% section = current_page.url.split('/')[2] %>
-    <% if section == 'brokerage' %>
-      <a class="title" href="/services/brokerage/">Brokerage</a>
-    <% else %>
-      <a class="title" href="/<%= current_page.data.category %>/"><%= current_page.url.split('/')[1].capitalize %></a>
-    <% end %>
+    <a class="title" href="/<%= current_page.data.category %>/"><%= current_page.url.split('/')[1].capitalize %></a>
 
     <ul id="navID" class="navlist">
-      <% if section == 'brokerage' %>
-        <% brokerage_pages('brokerage').each do |resource| %>
+      <% pages = sub_pages(current_page.url.split('/')[1]) %>
+      <% pages.each do |resource| %>
+        <% unless resource.path.include?('index.html') %>
           <li>
             <a href="<%= resource.url %>"><%= resource.data.title %></a>
           </li>
-        <% end %>
-      <% else %>
-        <% sub_pages(current_page.url.split('/')[1]).each do |resource| %>
-          <% unless resource.path.include?('index.html') %>
-            <li>
-              <a href="<%= resource.url %>"><%= resource.data.title %></a>
-            </li>
-          <% end %>
         <% end %>
       <% end %>
     </ul>

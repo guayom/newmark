@@ -4,6 +4,7 @@ body_class: content
 title: Asset/Property/Portfolio Management
 category: services
 published: true
+weight: 3
 ---
 In today’s world more than ever, the success of an asset is based upon how well it and the ownership are connected to the local market and opportunities. Our clients' and their properties  benefit from our deep local knowledge, local decision-making, market focus, and relationships that are centered on and in those local markets.
 
@@ -23,5 +24,5 @@ Whether we work with individual investors or with large institutional organizati
  - Tenant Retention Programs
  - Emergency Response Services
  - Space Planning / Move Management
- 
+
  Let us show you how we can build a management team for your assets, locally and globally.

@@ -3,6 +3,7 @@ layout: content
 body_class: content
 title: Value Added Services
 category: services
+weight: 11
 ---
 At Newmark Grubb Central America we focus on long-term relationships with our clients, that is why we assist with all the different needs to better serve and help them to achieve the best results to improve their businesses. We offer a platform of complementary services/solutions to add value and obtain the best results.
 

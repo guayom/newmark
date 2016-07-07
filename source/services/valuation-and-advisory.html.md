@@ -4,6 +4,7 @@ body_class: content
 title: Valuations and Advisory
 category: services
 published: true
+weight: 4
 ---
 Newmark Grubb Central America professionals know their markets.  We are on call to provide the skills and historical data together with their recommendations based on present-day market conditions to best position properties.
 
