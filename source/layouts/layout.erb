@@ -30,9 +30,7 @@
   <body class="container <%= current_page.data.body_class %>">
     <%= partial "partials/page_header" %>
     <%= partial "partials/mainnav" %>
-    <% if content_for?(:slider) %>
-      <div><%= yield_content :slider %></div>
-    <% end %>
+    <%= partial "partials/banner" %>
     <div class="main-wrap">
       <div class="main">
         <%= yield %>

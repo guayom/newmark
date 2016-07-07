@@ -1,0 +1,33 @@
+<div class="jshowoff-position">
+  <div class="home-page-rotator">
+    <% data.pdfs.pdfs.each do |pdf| %>
+      <div>
+        <table cellpadding="0" cellspacing="0" width="345" border="0">
+          <tbody>
+            <tr>
+              <td width="160">
+                <img src="/images/gallery/collateral_thumbnails/outlook_slider.png" border="0" width="160" height="160">
+              </td>
+              <td width="194">
+                <p>
+                  <span class="style4">
+                    <span style="color: #d0103a;">
+                      <strong><%= pdf['title'] %><br></strong>
+                    </span>
+                    <%= pdf['description'] %>
+                    <br>
+                  </span>
+                <span class="style1">
+                  <span class="style2">
+                    <a href="/pdfs/<%= pdf['file'] %>" target="_blank">Download the PDF</a>
+                  </span>
+                </span>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <% end %>
+  </div>
+</div>

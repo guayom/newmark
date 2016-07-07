@@ -3,7 +3,6 @@ layout: content
 body_class: content
 title: Industrial
 category: brokerage
-highlight: Newmark Grubb Costa Rica understands the unique real estate needs of the industrial community.
 ---
 Newmark Grubb Central America understands the unique real estate needs of the industrial community.
 We have extensive experience in the development of customized solutions for our tenant and landlord clients in manufacturing, assembly, warehousing, distribution, and research and development.
