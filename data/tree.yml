@@ -10,18 +10,14 @@ pdfs: {}
 privacy-policy.html.md: /privacy-policy.html.md
 services:
   asset-property-portfolio-management.html.md: /services/asset-property-portfolio-management.html.md
-  brokerage:
-    hotels-hospitality.html.md: /services/brokerage/hotels-hospitality.html.md
-    industrial.html.md: /services/brokerage/industrial.html.md
-    land.html.md: /services/brokerage/land.html.md
-    office.html.md: /services/brokerage/office.html.md
-    retail.html.md: /services/brokerage/retail.html.md
-    tenant-buyer-landlord-seller-representation.html.md: /services/brokerage/tenant-buyer-landlord-seller-representation.html.md
+  brokerage.html.md: /services/brokerage.html.md
   capital-markets-real-estate-investment-banking.html.md: /services/capital-markets-real-estate-investment-banking.html.md
   corporate-solutions.html.md: /services/corporate-solutions.html.md
   international-advisory.html.md: /services/international-advisory.html.md
   investment-financial.html.md: /services/investment-financial.html.md
   market-analysis.html.md: /services/market-analysis.html.md
+  new-mark-grubb-central-america-green.md: /services/new-mark-grubb-central-america-green.md
+  project-management.md: /services/project-management.md
   valuation-and-advisory.html.md: /services/valuation-and-advisory.html.md
   value-added-services.html.md: /services/value-added-services.html.md
 terms-of-use.html.md: /terms-of-use.html.md
