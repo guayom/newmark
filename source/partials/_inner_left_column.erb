@@ -3,7 +3,7 @@
     <ul id="navID" class="navlist">
       <% pages = sub_pages(current_page.url.split('/')[1]) %>
       <% pages.each do |resource| %>
-        <% unless resource.path.include?('index.html') %>
+        <% unless resource.path.include?('index.html') or resource.path.include?('thanks') %>
           <li>
             <a href="<%= resource.url %>"><%= resource.data.title %></a>
           </li>

@@ -18,7 +18,7 @@
 				Download our documents
 			</h2>
 			<div class="cross-ref-group-body">
-				<% data.pdfs.pdfs.each do |pdf| %>
+				<% data.pdfs.brochures.each do |pdf| %>
 					<div class="cross-ref external">
 						<h4>
 							<a href="/pdfs/<%= pdf['file'] %>.pdf" target="_blank" download="<%= pdf['title'] %>">
