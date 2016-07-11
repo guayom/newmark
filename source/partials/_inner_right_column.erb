@@ -9,32 +9,24 @@
 					<div class="clear"></div>
 				</div>
 			</div>
-			<div class="clear">
-				&nbsp;
-			</div>
-			<div class="clear">
-				&nbsp;
-			</div>
-			<div class="clear">
-				&nbsp;
-			</div>
-			<div class="clear">
-				&nbsp;
-			</div>
 		</div>
 	</div>
 	<div class="clear"></div>
 	<div class="cross-refs">
 		<div class="cross-ref-group cross-ref-0">
 			<h2>
-				Related Links
+				Download our documents
 			</h2>
 			<div class="cross-ref-group-body">
-				<div class="cross-ref external">
-					<h4>
-						<a href="http://www.bgcpartners.com/">BGC Partners</a>
-					</h4>
-				</div>
+				<% data.pdfs.pdfs.each do |pdf| %>
+					<div class="cross-ref external">
+						<h4>
+							<a href="/pdfs/<%= pdf['file'] %>.pdf" target="_blank" download="<%= pdf['title'] %>">
+								<%= pdf['title'] %>
+							</a>
+						</h4>
+					</div>
+				<% end %>
 			</div>
 		</div>
 	</div>
