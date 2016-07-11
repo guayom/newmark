@@ -1,8 +1,5 @@
 <div class="left-column">
   <div class="subnav">
-    <% section = current_page.url.split('/')[2] %>
-    <a class="title" href="/<%= current_page.data.category %>/"><%= current_page.url.split('/')[1].capitalize %></a>
-
     <ul id="navID" class="navlist">
       <% pages = sub_pages(current_page.url.split('/')[1]) %>
       <% pages.each do |resource| %>

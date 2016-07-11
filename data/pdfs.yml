@@ -1,9 +1,12 @@
 ---
 pdfs:
-  - title: Corporate Brochure
-    file: brochure-newmark-grubb.pdf
-    description: Newmark Grubb Central America
-  - title: Valuable assets, invaluable services
-    file: corporate-brochure.pdf
-    description: Newmark Grubb Knight Frank
+  - title: 2016 IAOP Global Outsourcing
+    description:
+    file: 2016-iaop-global-outsourcing-100
+  - title: Employee Productivity Report
+    description:
+    file: employee-productivity-report
+  - title: Global Cities the 2016 report
+    description:
+    file: global-cities-the-2016-report
 ---

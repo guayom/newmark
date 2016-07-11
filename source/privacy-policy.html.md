@@ -3,6 +3,7 @@ layout: content
 body_class: content
 title: Privacy Policy
 category: legal
+weight: 0
 ---
 We are committed to protecting your privacy. We use the information we collect about you to only in response to any inquiries made by you. Also, Newmark Grubb Central America may provide aggregate statistics about our customers, and related site information to the personnel of Newmark, but these statistics will include no personally identifying information. Newmark Grubb Central America may release account information when we believe, in good faith, that such release is reasonably necessary to (i) comply with law, (ii) enforce or apply the terms of any of our user agreements, or (iii) protect the rights, property, or safety of Newmark Grubb Central America, our users, or others.
 

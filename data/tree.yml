@@ -1,5 +1,5 @@
 ---
-index.html.erb: "/services/index.html.erb"
+index.html.erb: "/news/index.html.erb"
 about: {}
 news:
   inteligencia-de-mercado.html.md: "/news/inteligencia-de-mercado.html.md"

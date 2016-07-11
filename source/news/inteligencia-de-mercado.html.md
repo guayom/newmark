@@ -5,10 +5,11 @@ category: news
 body_class: news
 date: 2016-06-04
 published: true
+weight: 1
 ---
 ## **¡LO ÚLTIMO EN LOS SECTORES DE OFICINAS, CENTROS COMERCIALES E INDUSTRIAL!**
 
-![Newmark Grubb Central America Inteligencia de Mercado II Trimestre, 2016](/news/Inteligencia-de-mercado-NG-II-T-2016.jpg)
+![Newmark Grubb Central America Inteligencia de Mercado II Trimestre, 2016](/images/news-images/Inteligencia-de-mercado-NG-II-T-2016.jpg)
 
 ## _Oficinas se acercan al punto de equilibrio; plazas comerciales siguen creciendo y sector industrial desvela clave de su éxito_
 

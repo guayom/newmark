@@ -5,6 +5,7 @@ category: news
 body_class: news
 date: 2016-06-04
 published: true
+weight: 2
 ---
 ![Newmark Grubb Central America estrena medios digitales](/images/news-images/redes-sociales.png "Logo Title Text 1")
 

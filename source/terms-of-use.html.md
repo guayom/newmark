@@ -3,6 +3,7 @@ layout: content
 body_class: content
 title: Terms of Use
 category: legal
+weight: 0
 ---
 ### Who owns the site?
 
