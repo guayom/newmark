@@ -8,12 +8,23 @@ team:
   -
     nombre: "Carlos R. Robles"
     puesto: "Managing Director / President"
+    folder: carlos-robles
+    profiles:
+      - english
   -
     nombre: "Pedro E. Sanchez"
     puesto: "Market Analysis / Valuations"
+    folder: pedro-sanchez
+    profiles:
+      - english
+      - spanish
   -
     nombre: "Frank Quirós"
     puesto: "Market Analysis / Real Estate Consultant"
+    folder: frank-quiros
+    profiles:
+      - english
+      - spanish
   -
     nombre: "Manuel Calvo"
     puesto: Appraiser
@@ -23,6 +34,10 @@ team:
   -
     nombre: "Adrián Rodríguez"
     puesto: "Real Estate Consultant"
+    folder: adrian-rodriguez
+    profiles:
+      - english
+      - spanish
   -
     nombre: "Diego Ouellette"
     puesto: "Real Estate Consultant / Investment / Hospitality"
@@ -38,6 +53,13 @@ team:
 ---
 <ul>
 <% current_page.data.team.each do |member| %>
-  <li><%= member.nombre %> - <i><%= member.puesto %></i></li>
+  <li>
+    <%= member.nombre %> - <i><%= member.puesto %></i>
+    <% unless member.folder.nil?  %>
+      <br/>
+      <% if member.profiles.include? 'english' %><a href="/pdfs/profiles/<%= member.folder %>/english.pdf" download="<%= member.nombre.tr('.', '') %> Professional Profile">Download Profile</a> <% end %>
+      <% if member.profiles.include? 'spanish' %><a href="/pdfs/profiles/<%= member.folder %>/espanol.pdf" download="<%= member.nombre.tr('.', '') %> Perfil Profesional">Descargar Perfil</a> <% end %>
+    <% end %>
+  </li>
 <% end %>
 </ul>
