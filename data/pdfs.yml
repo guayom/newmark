@@ -9,6 +9,9 @@ pdfs:
   - title: Global Cities the 2016 report
     description:
     file: global-cities-the-2016-report
+  - title: LATAM Report 2016
+    file: latam-report-2016
+    description: Newmark Grubb Knight Frank
 brochures:
   - title: NGCA Corporate Brochure
     file: brochure-newmark-grubb
