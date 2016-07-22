@@ -39,7 +39,7 @@ items:
         url: "/services/new-mark-grubb-central-america-green/"
       - title: Value Added Services
         url: "/services/value-added-services/"
-  - title: "News"
-    url: "/news/"
+  - title: "Media Center"
+    url: "/media-center/"
   - title: Contact Us
     url: "/contact-us"
