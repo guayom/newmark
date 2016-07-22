@@ -1,10 +1,10 @@
 ---
-index.html.erb: "/news/index.html.erb"
+index.html.erb: "/media-center/index.html.erb"
 about: {}
-news:
-  inteligencia-de-mercado.html.md: "/news/inteligencia-de-mercado.html.md"
-  newmark-grubb-central-america-estrena-medios-digitales.html.md: "/news/newmark-grubb-central-america-estrena-medios-digitales.html.md"
-  servicios-de-newmark-grubb-central-america.html.md: "/news/servicios-de-newmark-grubb-central-america.html.md"
+media-center:
+  inteligencia-de-mercado.html.md: "/media-center/inteligencia-de-mercado.html.md"
+  newmark-grubb-central-america-estrena-medios-digitales.html.md: "/media-center/newmark-grubb-central-america-estrena-medios-digitales.html.md"
+  servicios-de-newmark-grubb-central-america.html.md: "/media-center/servicios-de-newmark-grubb-central-america.html.md"
 partials: {}
 pdfs:
   profiles:
