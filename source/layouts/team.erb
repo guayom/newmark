@@ -1,0 +1,36 @@
+<% wrap_layout :layout do %>
+  <div class="top-spacer"></div>
+  <%= partial "partials/inner_left_column" %>
+  <div class="main-column">
+		<!--<div class="crumb-trail">
+			<span><a href="/default.aspx">Home</a> &gt; <a href="/home/about-our-firm.aspx">About Our Firm</a> &gt; Company Overview</span>
+		</div>-->
+		<div>
+			<div>
+				<h1 class="page-title">
+					<%= current_page.data.title %>
+				</h1>
+			</div>
+			<div class="body-txt">
+				<p class="highlight">
+          <%= current_page.data.highlight %>
+				</p>
+        <div class="team-info-col">
+          <img src="/about/professional-team/adrian-rodriguez/imagen.jpg" alt="" class="imagen-team" />
+          Newmark Grubb Central America<br/>
+          Oficentro Madrid<br/>
+          Suite 3-1<br/>
+          San Jose, Costa Rica<br/>
+          Pozos de Santa Ana<br/>
+          <%= current_page.data.email %>
+          Tel / Fax +506 2203-5171
+          Mobile <%= current_page.data.mobile %>
+        </div>
+        <div class="team-profile-col">
+  				<%= yield %>
+        </div>
+			</div>
+		</div>
+	</div>
+  <%= partial "partials/inner_right_column" %>
+<% end %>

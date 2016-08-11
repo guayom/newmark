@@ -57,8 +57,8 @@ team:
     <%= member.nombre %> - <i><%= member.puesto %></i>
     <% unless member.folder.nil?  %>
       <br/>
-      <% if member.profiles.include? 'english' %><a href="/pdfs/profiles/<%= member.folder %>/english.pdf" download="<%= member.nombre.tr('.', '') %> Professional Profile">Download Profile</a> <% end %>
-      <% if member.profiles.include? 'spanish' %><a href="/pdfs/profiles/<%= member.folder %>/espanol.pdf" download="<%= member.nombre.tr('.', '') %> Perfil Profesional">Descargar Perfil</a> <% end %>
+      <% if member.profiles.include? 'english' %><a href="/about/professional-team/<%= member.folder %>/en.html">Profile </a> <% end %>
+      <% if member.profiles.include? 'spanish' %><a href="/about/professional-team/<%= member.folder %>/es.html">Perfil en espannol</a> <% end %>
     <% end %>
   </li>
 <% end %>
