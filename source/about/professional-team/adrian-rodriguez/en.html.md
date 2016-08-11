@@ -9,6 +9,15 @@ mobile: +506 8846-0872
 category: team
 published: true
 weight: 1
+yearsOfExperience: 6
+specialization:
+  - Tenant / Buyer Representation
+  - Landlord / Seller Representation
+  - Retail
+  - Office
+  - Consultancy Services
+  - Investment
+  - Appraisal Services
 ---
 Adrián Rodríguez Luna, Real Estate Consulting of Newmark Grubb
 Central America, exclusive member of Newmark Grubb Knight Frank
@@ -22,23 +31,9 @@ and private real estate fund. Prior joining NGKF in November 2015,
 Adrián was working in Costa Rica for NAI Global, where he began
 gaining experience in commercial real estate.
 
-*Years of Experience:* 6 Years
-
-##Areas of Specialization
-
-- Tenant / Buyer Representation
-- Landlord / Seller Representation
-- Retail
-- Office
-- Consultancy Services
-- Investment
-- Appraisal Services
-
 Throughout his career he has been involved in transactions (selling,
 purchasing, leasing and Investment structures) in the different markets,
 such as Office, Retail, Industrial, and Multi Family.
 Newmark Grubb Central America represents NGKF in the countries of
 Costa Rica, Panamá, Nicaragua, Honduras, El Salvador and
 Guatemala.
-
-

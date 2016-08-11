@@ -51,15 +51,15 @@ team:
     nombre: "Carlos Alberto Alvarado"
     puesto: "Project Manager"
 ---
-<ul>
+<ul class="team-member-list">
 <% current_page.data.team.each do |member| %>
   <li>
-    <%= member.nombre %> - <i><%= member.puesto %></i>
-    <% unless member.folder.nil?  %>
-      <br/>
-      <% if member.profiles.include? 'english' %><a href="/about/professional-team/<%= member.folder %>/en.html">Profile </a> <% end %>
-      <% if member.profiles.include? 'spanish' %><a href="/about/professional-team/<%= member.folder %>/es.html">Perfil en espannol</a> <% end %>
+    <% if member.profiles.present? and member.profiles.include?('english')  %>
+      <strong><a href="/about/professional-team/<%= member.folder %>/en"><%= member.nombre %></strong></a>
+    <% else %>
+      <strong><%= member.nombre %></strong>
     <% end %>
+    <br/><i><%= member.puesto %></i>
   </li>
 <% end %>
 </ul>

@@ -2,35 +2,64 @@
   <div class="top-spacer"></div>
   <%= partial "partials/inner_left_column" %>
   <div class="main-column">
-		<!--<div class="crumb-trail">
-			<span><a href="/default.aspx">Home</a> &gt; <a href="/home/about-our-firm.aspx">About Our Firm</a> &gt; Company Overview</span>
-		</div>-->
 		<div>
 			<div>
 				<h1 class="page-title">
-					<%= current_page.data.title %>
+					Professional Profiles
 				</h1>
+        <h2 class="subtitle"><%= current_page.data.title %></h2>
+        <p><strong><%= current_page.data.highlight %></strong></p>
 			</div>
 			<div class="body-txt">
-				<p class="highlight">
-          <%= current_page.data.highlight %>
-				</p>
-        <div class="team-info-col">
-          <img src="/about/professional-team/adrian-rodriguez/imagen.jpg" alt="" class="imagen-team" />
-          Newmark Grubb Central America<br/>
-          Oficentro Madrid<br/>
-          Suite 3-1<br/>
-          San Jose, Costa Rica<br/>
-          Pozos de Santa Ana<br/>
-          <%= current_page.data.email %>
-          Tel / Fax +506 2203-5171
-          Mobile <%= current_page.data.mobile %>
-        </div>
-        <div class="team-profile-col">
-  				<%= yield %>
-        </div>
+				<%= yield %>
 			</div>
 		</div>
 	</div>
-  <%= partial "partials/inner_right_column" %>
+  <div class="right-column">
+  	<div class="clear"></div>
+  	<div class="cross-refs">
+  		<div class="cross-ref-group cross-ref-0">
+  			<div class="cross-ref-group-body">
+          <img src="/about/professional-team/adrian-rodriguez/imagen.jpg" alt="" class="imagen-team" />
+          <span style="font-size: 8pt; font-weight: bold;"><%= current_page.data.title %><br></span>
+          <%= current_page.data.highlight %><br/><br/>
+          <p>
+            Newmark Grubb Central America<br/>
+            Oficentro Madrid<br/>
+            Suite 3-1<br/>
+            San Jose, Costa Rica<br/>
+            Pozos de Santa Ana<br/>
+            <%= current_page.data.email %><br/>
+            Tel / Fax +506 2203-5171<br/>
+            Mobile <%= current_page.data.mobile %>
+          </p>
+          <br/>
+
+          <a id="MasterPage_ctl00_ContentPlaceHolder1_hypVCard" class="v-card" href="/handlers/v-card.ashx?d=21853">Download Profile</a>
+
+          <br/>
+
+          <a id="MasterPage_ctl00_ContentPlaceHolder1_hypVCard" class="v-card" href="/handlers/v-card.ashx?d=21853">Descargar Perfil</a>
+
+          <br/>
+
+          <span style="font-size: 8pt; font-weight: bold;">Areas of Specialization</span>
+          <div id="AreasOfSpecialization">
+            <ul>
+              <% current_page.data.specialization.each do |specialty| %>
+                <li><%= specialty %></li>
+              <% end %>
+            </ul>
+          </div>
+
+          <p>
+		        <span style="font-size: 8pt; font-weight: bold;">Years of Experience</span><br>
+		        <%= current_page.data.yearsOfExperience %> years
+	        </p>
+
+  			</div>
+  		</div>
+  	</div>
+  	<div class="clear"></div>
+  </div>
 <% end %>

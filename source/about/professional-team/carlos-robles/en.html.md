@@ -1,14 +1,25 @@
 ---
-layout: content
+layout: team
 body_class: content
 title: CARLOS R. ROBLES,SIOR
-categoriy: team
+highlight: President
+folder: carlos-robles
+email: crobles@ngcentralamerica.com
+mobile: +506 8375-9138
+category: team
 published: true
 weight: 1
+yearsOfExperience: 14
+specialization:
+  - Tenant / Buyer Representation
+  - Landlord / Seller Representation
+  - Industrial
+  - Office
+  - Hotels & Resorts
+  - Market Analysis
+  - Consultancy Services
+  - Investment
 ---
-CARLOS R. ROBLES,SIOR
-President
-
 Carlos R. Robles is the President / Owner of Newmark Grubb Central
 America, exclusive member of Newmark Grubb Knight Frank
 (ngkf.com), a global leader in commercial Real Estate services
@@ -22,15 +33,6 @@ estate fund. Prior joining NGKF in November 2015, Carlos was the
 representative in Costa Rica for NAI Global, where he received in 2010
 the Best Office Award and in 2012 the President’s award.
 
-Newmark Grubb Central America
-Oficentro Madrid
-Suite 3-1
-San Jose, Costa Rica
-Pozos de Santa Ana
-crobles@ngcentralamerica.com
-Tel / Fax +(506)2203-5171
-Mobile +(506)8375-9138
-
 Throughout his career he has been involved in transactions (selling,
 purchasing, leasing and Investment structures) with over 30,000,000
 (Thirty million) square meters (+322 million square feet) in the different
@@ -39,28 +41,6 @@ He has also been involved in various and very important consulting
 services on the different Real Estate markets with companies such as
 Scotiabank, RIU Hotels, Citibank, Bticino, Dolphin Capital, among
 others.
-
-Years of Experience
-14 Years
-
-Areas of Specialization
-w
-w
-w
-w
-w
-w
-w
-w
-
-Tenant / Buyer Representation
-Landlord / Seller Representation
-Industrial
-Office
-Hotels & Resorts
-Market Analysis
-Consultancy Services
-Investment
 
 Carlos is also the first and only SIOR designee in Central America: The
 SIOR designation is a professional achievement for highly qualified
