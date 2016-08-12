@@ -3,7 +3,7 @@ layout: team
 body_class: content
 title: PEDRO ESTEBAN SÁNCHEZ
 highlight: VP Market Analysis/ Real Estate Consultant
-folder: pedro-snachez
+folder: pedro-sanchez
 email: fquiros@ngcentralamerica.com
 mobile: +506 8915-3342
 category: team

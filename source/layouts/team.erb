@@ -20,8 +20,10 @@
   	<div class="cross-refs">
   		<div class="cross-ref-group cross-ref-0">
   			<div class="cross-ref-group-body">
-          <img src="/about/professional-team/<%= current_page.data.folder %>/imagen.jpg" alt="" class="imagen-team" />
-          <div class="clear"></div>
+          <% if sitemap.find_resource_by_path("/about/professional-team/#{current_page.data.folder}/imagen.jpg") %>
+            <img src="/about/professional-team/<%= current_page.data.folder %>/imagen.jpg" alt="" class="imagen-team" />
+            <div class="clear"></div>
+          <% end %>
           <span style="font-size: 8pt; font-weight: bold;"><%= current_page.data.title %><br></span>
           <%= current_page.data.highlight %><br/><br/>
           <p>
@@ -38,14 +40,14 @@
 
           <% if sitemap.find_resource_by_path("/about/professional-team/#{current_page.data.folder}/english.pdf") %>
               <a href="/about/professional-team/<%= current_page.data.folder %>/english.pdf" download="<%= current_page.data.title.gsub('.', '') %> Professional Profile">Download Profile (english)</a>
+              <br/>
           <% end %>
 
-          <br/>
           <% if sitemap.find_resource_by_path("/about/professional-team/#{current_page.data.folder}/espanol.pdf") %>
             <a href="/about/professional-team/<%= current_page.data.folder %>/espanol.pdf" download="<%= current_page.data.title.gsub('.', '') %> - Perfil Profesional">Descargar Perfil (español)</a>
+            <br/>
           <% end %>
 
-          <br/>
           <br/>
 
           <span style="font-size: 8pt; font-weight: bold;">Areas of Specialization</span>
