@@ -2,9 +2,9 @@
 layout: content
 body_class: content
 title: CARLOS R. ROBLES,SIOR
-categoriy: team
+category: team
 published: true
-weight: 1
+weight: 0
 ---
 CARLOS R. ROBLES,SIOR
 Presidente

@@ -2,9 +2,9 @@
 layout: content
 body_class: content
 title: ADRIAN RODRIGUEZ LUNA
-categoriy: team
+category: team
 published: true
-weight: 1
+weight: 0
 ---
 ADRIAN RODRIGUEZ LUNA
 Consultor Inmobiliario

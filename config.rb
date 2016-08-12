@@ -48,7 +48,9 @@ helpers do
   # Returns all pages under a certain directory.
   def sub_pages(dir)
     sitemap.resources.select do |resource|
-      resource.path.start_with?(dir)
+      unless resource.path.split('.').last == 'pdf' || resource.path.split('.').last == 'jpg' || resource.path.split('.').last == 'png' || resource.data.category == 'team'
+        resource.path.start_with?(dir)
+      end
     end.sort_by { |resource| resource.data.weight }
   end
 end

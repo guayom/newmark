@@ -8,7 +8,7 @@ email: crobles@ngcentralamerica.com
 mobile: +506 8375-9138
 category: team
 published: true
-weight: 1
+weight: 0
 yearsOfExperience: 14
 specialization:
   - Tenant / Buyer Representation

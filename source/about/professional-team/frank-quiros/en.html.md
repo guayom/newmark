@@ -8,7 +8,7 @@ email: fquiros@ngcentralamerica.com
 mobile: +506 6041-7025
 category: team
 published: true
-weight: 1
+weight: 0
 yearsOfExperience: 3
 specialization:
   - Tenant / Buyer Representation

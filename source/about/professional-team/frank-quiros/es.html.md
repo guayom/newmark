@@ -3,9 +3,9 @@ layout: content
 body_class: content
 title: FRANK A. QUIRÓS MARÍN
 highlight: A Global Leader in Commercial Real Estate
-categoriy: team
+category: team
 published: true
-weight: 1
+weight: 0
 ---
 FRANK A. QUIRÓS MARÍN
 Asesor Inmobiliario / Analista de

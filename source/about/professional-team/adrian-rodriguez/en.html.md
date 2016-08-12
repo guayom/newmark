@@ -8,7 +8,7 @@ email: arodriguez@ngcentralamerica.com
 mobile: +506 8846-0872
 category: team
 published: true
-weight: 1
+weight: 0
 yearsOfExperience: 6
 specialization:
   - Tenant / Buyer Representation
