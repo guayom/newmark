@@ -4,15 +4,15 @@ about:
   professional-team:
     adrian-rodriguez:
       en.html.md: "/about/professional-team/adrian-rodriguez/en.html.md"
-      es.md: "/about/professional-team/adrian-rodriguez/es.md"
+      es.html.md: "/about/professional-team/adrian-rodriguez/es.html.md"
     carlos-robles:
-      en.md: "/about/professional-team/carlos-robles/en.md"
-      es.md: "/about/professional-team/carlos-robles/es.md"
+      en.html.md: "/about/professional-team/carlos-robles/en.html.md"
+      es.html.md: "/about/professional-team/carlos-robles/es.html.md"
     frank-quiros:
-      en.md: "/about/professional-team/frank-quiros/en.md"
-      es.md: "/about/professional-team/frank-quiros/es.md"
+      en.html.md: "/about/professional-team/frank-quiros/en.html.md"
+      es.html.md: "/about/professional-team/frank-quiros/es.html.md"
     pedro-sanchez:
-      en.md: "/about/professional-team/pedro-sanchez/en.md"
+      en.html.md: "/about/professional-team/pedro-sanchez/en.html.md"
 media-center:
   inteligencia-de-mercado.html.md: "/media-center/inteligencia-de-mercado.html.md"
   newmark-grubb-central-america-estrena-medios-digitales.html.md: "/media-center/newmark-grubb-central-america-estrena-medios-digitales.html.md"
