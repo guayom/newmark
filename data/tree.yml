@@ -14,6 +14,7 @@ about:
     pedro-sanchez:
       en.html.md: "/about/professional-team/pedro-sanchez/en.html.md"
 media-center:
+  heredia-emerge.md: "/media-center/heredia-emerge.md"
   inteligencia-de-mercado.html.md: "/media-center/inteligencia-de-mercado.html.md"
   newmark-grubb-central-america-estrena-medios-digitales.html.md: "/media-center/newmark-grubb-central-america-estrena-medios-digitales.html.md"
   servicios-de-newmark-grubb-central-america.html.md: "/media-center/servicios-de-newmark-grubb-central-america.html.md"
