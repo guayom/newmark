@@ -14,7 +14,11 @@ about:
     pedro-sanchez:
       en.html.md: "/about/professional-team/pedro-sanchez/en.html.md"
 media-center:
-  heredia-emerge.md: "/media-center/heredia-emerge.md"
+  centros-comerciales-clase-a-y-b-lideran-mercado-en-costa-rica.html.md: "/media-center/centros-comerciales-clase-a-y-b-lideran-mercado-en-costa-rica.html.md"
+  como-puede-su-oficina-convertirse-en-un-iman-del-mejor-talento-profesional.html.md: "/media-center/como-puede-su-oficina-convertirse-en-un-iman-del-mejor-talento-profesional.html.md"
+  heredia-emerge.html.md: "/media-center/heredia-emerge.html.md"
+  in-the-news:
+    index.html.md: "/media-center/in-the-news/index.html.md"
   inteligencia-de-mercado.html.md: "/media-center/inteligencia-de-mercado.html.md"
   newmark-grubb-central-america-estrena-medios-digitales.html.md: "/media-center/newmark-grubb-central-america-estrena-medios-digitales.html.md"
   servicios-de-newmark-grubb-central-america.html.md: "/media-center/servicios-de-newmark-grubb-central-america.html.md"

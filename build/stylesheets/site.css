@@ -2330,3 +2330,31 @@ p {
 
 .text-left {
   text-align: left; }
+
+.team-info-col {
+  width: 30%;
+  float: left; }
+
+.team-profile-col {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  box-sizing: border-box; }
+
+.imagen-team {
+  float: left;
+  max-width: 100%;
+  max-height: 150px;
+  margin-bottom: 20px;
+  clear: both;
+  display: block; }
+
+#AreasOfSpecialization li {
+  padding: 0 0 .3em 1.2em;
+  background: url(../images/blt_square.gif) 0 0.55em no-repeat; }
+
+.team-member-list a {
+  text-decoration: none;
+  color: #D0103A; }
+.team-member-list i {
+  color: #666; }
