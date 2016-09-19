@@ -1,6 +1,6 @@
 ---
 layout: content
-title: 'Centros comerciales clase A y B lideran mercado en Costa Rica'
+title: 'Centros comerciales clase A y B lideran mercado en Costa Rica.'
 category: news
 body_class: news
 date: 2016-16-08
