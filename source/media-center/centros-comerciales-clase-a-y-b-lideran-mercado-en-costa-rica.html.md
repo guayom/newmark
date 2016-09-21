@@ -1,9 +1,9 @@
 ---
 layout: content
-title: 'Centros comerciales clase A y B lideran mercado en Costa Rica.'
+title: Centros comerciales clase A y B lideran mercado en Costa Rica.
 category: news
 body_class: news
-date: 2016-16-08
+date: {}
 published: true
 weight: 1
 ---
@@ -14,7 +14,7 @@ weight: 1
 **_Por Comunicación Newmark Grubb Central America_**<br/>
 <a href="mailto:comunicacion@ngcentralamerica.com">comunicacion@ngcentralamerica.com</a>
 
-La oferta del mercado comercial inmobiliario en Costa Rica continúa dominada por los inmuebles de las clases A y B, de acuerdo con el último reporte trimestral de NEWMARK GRUBB CENTRAL AMERICA.
+La oferta del mercado comercial inmobiliario en Costa Rica continúa dominada por los inmuebles de las clases A y B, de acuerdo con el último reporte trimestral de NEWMARK GRUBB CENTRAL AMERICA
 
 Los datos indican que los inmuebles clase A acaparan cerca de 801.607 metros cuadrados (m2) de oferta, mientras que los B ocupan 713.146 m2, lo cual equivale a 45% y 40% del inventario registrado, respectivamente.
 
