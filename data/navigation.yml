@@ -40,6 +40,11 @@ items:
       - title: Value Added Services
         url: "/services/value-added-services/"
   - title: "Media Center"
-    url: "/media-center/"
+    url: "#"
+    submenu:
+      - title: "Press releases"
+        url: "/media-center/press-releases/"
+      - title: "In the news"
+        url: "/media-center/in-the-news"
   - title: Contact Us
     url: "/contact-us"
