@@ -50,6 +50,8 @@
 
           <br/>
 
+          <% unless current_page.data.specialization.nil? or current_page.data.specialization.empty? %>
+
           <span style="font-size: 8pt; font-weight: bold;">Areas of Specialization</span>
           <div id="AreasOfSpecialization">
             <ul>
@@ -58,6 +60,8 @@
               <% end %>
             </ul>
           </div>
+
+          <% end %>
 
           <p>
 		        <span style="font-size: 8pt; font-weight: bold;">Years of Experience</span><br>

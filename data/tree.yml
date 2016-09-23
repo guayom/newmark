@@ -8,6 +8,9 @@ about:
     carlos-robles:
       en.html.md: "/about/professional-team/carlos-robles/en.html.md"
       es.html.md: "/about/professional-team/carlos-robles/es.html.md"
+    david-behar:
+      en.html.md: "/about/professional-team/david-behar/en.html.md"
+      es.html.md: "/about/professional-team/david-behar/es.html.md"
     frank-quiros:
       en.html.md: "/about/professional-team/frank-quiros/en.html.md"
       es.html.md: "/about/professional-team/frank-quiros/es.html.md"
@@ -23,7 +26,8 @@ media-center:
     newmark-grubb-central-america-estrena-medios-digitales.html.md: "/media-center/press-releases/newmark-grubb-central-america-estrena-medios-digitales.html.md"
     servicios-de-newmark-grubb-central-america.html.md: "/media-center/press-releases/servicios-de-newmark-grubb-central-america.html.md"
 partials: {}
-pdfs: {}
+pdfs:
+  profiles: {}
 privacy-policy.html.md: "/privacy-policy.html.md"
 services:
   asset-property-portfolio-management.html.md: "/services/asset-property-portfolio-management.html.md"
