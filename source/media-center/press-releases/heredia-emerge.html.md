@@ -3,7 +3,7 @@ layout: content
 title: 'Heredia emerge como líder en futuros proyectos residenciales de Costa Rica'
 category: news
 body_class: news
-date: 2016-16-08
+date: 2016-08-16
 published: true
 weight: 1
 ---

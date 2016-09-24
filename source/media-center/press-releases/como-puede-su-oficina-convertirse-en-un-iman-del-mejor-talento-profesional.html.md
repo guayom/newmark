@@ -3,7 +3,7 @@ layout: content
 title: '¿Cómo puede su oficina convertirse en un imán del mejor talento profesional?'
 category: news
 body_class: news
-date: 2016-16-08
+date: 2016-08-16
 published: true
 weight: 1
 ---

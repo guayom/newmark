@@ -53,6 +53,14 @@ helpers do
       end
     end.sort_by { |resource| resource.data.weight }
   end
+  # Returns all pages under a certain directory.
+  def sub_pages_by_date(dir)
+    sitemap.resources.select do |resource|
+      unless resource.path.include?('index.html')
+        resource.path.start_with?(dir)
+      end
+    end.sort_by { |resource| resource.data.date }.reverse
+  end
 end
 
 

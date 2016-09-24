@@ -4,19 +4,18 @@ body_class: content
 title: Media Center
 category: news
 weight: 0
+date: 2016-09-23
 ---
 <div class="news">
   <div class="list">
-    <% sub_pages('media-center').each do |resource| %>
-      <% unless resource.path.include?('index.html') %>
-        <div class="odd">
-      		<div class="date"><strong><%= resource.data.date %></strong></div>
-      		<div class="detail-info">
-      			<div><a class="detail-link" href="<%= resource.url %>"><%= resource.data.title %></a></div>
-      		</div>
-      		<div class="clear"></div>
+    <% sub_pages_by_date('media-center/press-releases').each do |resource| %>
+      <div class="odd">
+    		<div class="date"><strong><%= resource.data.date %></strong></div>
+    		<div class="detail-info">
+    			<div><a class="detail-link" href="<%= resource.url %>"><%= resource.data.title %></a></div>
+    		</div>
+    		<div class="clear"></div>
       	</div>
-      <% end %>
     <% end %>
   </div>
 </div>
