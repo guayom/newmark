@@ -5,7 +5,7 @@
       Recent News
     </h2>
     <ul>
-      <% sub_pages('news').each do |resource| %>
+      <% sub_pages_by_date('media-center/press-releases').first(5).each do |resource| %>
         <% unless resource.path.include?('index.html') %>
           <li>
             <div class="date">
@@ -19,5 +19,6 @@
         <% end %>
       <% end %>
     </ul>
+    <a href="/media-center/press-releases/">Más noticias</a>
   </div>
 </div>
