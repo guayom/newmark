@@ -1,13 +1,13 @@
 ---
 layout: content
-title: Informe regional de Newmark Grubb Knight Frank
+title: Incorpore el Project Management en sus proyectos inmobiliarios
 category: news
 body_class: news
 date: 2016-10-15
 published: true
 weight: 3
 ---
-![Informe regional de Newmark Grubb Knight Frank](/images/news-images/servicios-project-management.png)
+![Incorpore el Project Management en sus proyectos inmobiliarios](/images/news-images/servicios-project-management.png)
 
 ## Newmark Grubb Central America ofrece este servicio para atender necesidades técnicas de diseño y construcción a nivel administrativo
 
