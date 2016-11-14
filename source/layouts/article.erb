@@ -20,6 +20,7 @@
 
   <% content_for(:sidebar) do %>
     <ul id="navID" class="navlist">
+      <li><h4>Other articles</h4></li>
       <% dato.articles.sort_by { |resource| resource.date }.reverse.first(4).each do |article| %>
         <li>
           <a href="/media-center/press-releases/<%= article.title.parameterize %>/"><%= article.title %></a>
