@@ -5,18 +5,16 @@
       Recent News
     </h2>
     <ul>
-      <% sub_pages_by_date('media-center/press-releases').first(5).each do |resource| %>
-        <% unless resource.path.include?('index.html') %>
-          <li>
-            <div class="date">
-              <%= resource.data.date %>
-            </div>
-            <h4>
-              <a href="<%= resource.url %>"><%= resource.data.title %></a>
-            </h4>
-            <div class="clear"></div>
-          </li>
-        <% end %>
+      <% dato.articles.sort_by { |resource| resource.date }.reverse.first(5).each do |article| %>
+        <li>
+          <div class="date">
+            <%= article.date %>
+          </div>
+          <h4>
+            <a href="/media-center/press-releases/<%= article.title.parameterize %>/"><%= article.title %></a>
+          </h4>
+          <div class="clear"></div>
+        </li>
       <% end %>
     </ul>
     <a href="/media-center/press-releases/">Más noticias</a>

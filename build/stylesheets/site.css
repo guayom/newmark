@@ -2359,3 +2359,7 @@ p {
   color: #D0103A; }
 .team-member-list i {
   color: #666; }
+
+.navlist li h4 {
+  padding: 5px 16px 5px;
+  font-size: 1.2em; }
