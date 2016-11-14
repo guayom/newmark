@@ -1,5 +1,5 @@
 ---
-layout: content_with_regular_sidebar
+layout: services
 body_class: content
 title: Corporate Solutions
 category: services
