@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: content_with_regular_sidebar
 body_class: content
 title: Newmark Grubb Green Latin America
 category: services

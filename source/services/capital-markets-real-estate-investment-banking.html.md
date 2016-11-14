@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: content_with_regular_sidebar
 body_class: content
 title: Capital Markets / Real Estate Investment Banking
 category: services

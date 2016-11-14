@@ -1,0 +1,9 @@
+<% wrap_layout :content do %>
+
+  <%= yield %>
+
+  <% content_for(:sidebar) do %>
+    <%= partial "partials/sidebar_regular", :locals => { :collection => 'about', :title => "About us" } %>
+  <% end %>
+
+<% end %>
