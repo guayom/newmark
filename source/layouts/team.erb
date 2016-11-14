@@ -1,13 +1,22 @@
 <% wrap_layout :layout do %>
   <div class="top-spacer"></div>
-  <%= partial "partials/inner_left_column" %>
+  <div class="left-column">
+    <div class="subnav">
+      <ul id="navID" class="navlist">
+        <li><h4>Professional Team</h4></li>
+        <% team = [["Carlos R. Robles", "CARLOS R. ROBLES,SIOR", "carlos-robles"], ["Pedro E. Sanchez", "PEDRO ESTEBAN SÁNCHEZ", "pedro-sanchez"], ["Frank Quirós", "FRANK A. QUIRÓS MARÍN", "frank-quiros"], ["Adrián Rodríguez", "ADRIAN RODRIGUEZ LUNA", "adrian-rodriguez"]] %>
+        <%  team.each do |person| %>
+          <li><a href="/about/professional-team/<%= person[2] %>/en" <%= "disabled tabindex='-1'" if person[1] == current_page.data.title %>><%= person[0] %></a></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
   <div class="main-column">
 		<div>
 			<div>
 				<h1 class="page-title">
-					Professional Profiles
+					<%= current_page.data.title %>
 				</h1>
-        <h2 class="subtitle"><%= current_page.data.title %></h2>
         <p><strong><%= current_page.data.highlight %></strong></p>
 			</div>
 			<div class="body-txt">
