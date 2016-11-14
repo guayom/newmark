@@ -23,3 +23,14 @@ date: 2016-09-23
     <% end %>
   </div>
 </div>
+<% content_for(:sidebar) do %>
+  <ul id="navID" class="navlist">
+    <li><a href="/media-center/in-the-news/">In the news</a></li>
+    <% dato.articles.sort_by { |resource| resource.date }.reverse.last(4).each do |article| %>
+      <li>
+        <a href="/media-center/press-releases/<%= article.title.parameterize %>/"><%= article.title %></a>
+      </li>
+    <% end %>
+    <a href="/media-center/press-releases/">More articles</a>
+  </ul>
+<% end %>

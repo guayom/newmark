@@ -1,6 +1,10 @@
 <% wrap_layout :layout do %>
   <div class="top-spacer"></div>
-  
+  <div class="left-column">
+    <div class="subnav">
+      <%= yield_content(:sidebar) %>
+    </div>
+  </div>
   <div class="main-column">
 		<!--<div class="crumb-trail">
 			<span><a href="/default.aspx">Home</a> &gt; <a href="/home/about-our-firm.aspx">About Our Firm</a> &gt; Company Overview</span>

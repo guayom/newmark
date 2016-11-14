@@ -1,3 +1,33 @@
-<% wrap_layout :layout do %>
-HELLO
+<% wrap_layout :content do %>
+
+  <h1 class="page-title"><%= article.title %></h1>
+  <%= "<h2>#{article.subtitle}</h2>" if article.subtitle.present? %>
+
+  <div class="body-txt">
+    <%= image_tag article.image.file.width(550).to_url %>
+  </div>
+
+  <div class="highlight">
+    <%= article.intro %>
+  </div>
+
+  <p>
+    <strong><em>Por Comunicación Newmark Grubb Central America</em></strong><br>
+    <a href="mailto:comunicacion@ngcentralamerica.com">comunicacion@ngcentralamerica.com</a>
+  </p>
+
+  <%= article.content %>
+
+  <% content_for(:sidebar) do %>
+    <ul id="navID" class="navlist">
+      <% dato.articles.sort_by { |resource| resource.date }.reverse.first(4).each do |article| %>
+        <li>
+          <a href="/media-center/press-releases/<%= article.title.parameterize %>/"><%= article.title %></a>
+        </li>
+      <% end %>
+      <li><a href="/media-center/press-releases/">More articles</a></li>
+      <li><a href="/media-center/in-the-news/">In the news</a></li>
+    </ul>
+  <% end %>
+
 <% end %>
