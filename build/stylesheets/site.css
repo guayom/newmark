@@ -1738,11 +1738,12 @@ div.sublist {
 
 .f-linkedin, .f-facebook, .f-twitter, .f-youtube {
   float: left;
-  display: block;
+  display: inline-block;
   margin: 1px 0 0;
   width: 93px;
   text-indent: -9999px;
-  height: 24px; }
+  height: 24px;
+  overflow: hidden; }
 
 .f-facebook {
   background: url(../images/bkg-social-buttons.png) no-repeat 0 0px; }

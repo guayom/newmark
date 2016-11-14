@@ -25,7 +25,7 @@
 			var HideDropDownNav = false;
 		</script>
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
     <script src="/javascripts/jquery_rotate.js"></script>
     <script src="/javascripts/common.js"></script>
   </head>
@@ -156,28 +156,7 @@
     <div class="main-wrap">
       <div class="main">
           <div class="top-spacer"></div>
-  <div class="left-column">
-  <div class="subnav">
-    <ul id="navID" class="navlist">
-          <li>
-            <a href="/about/about-our-firm/">About Our Firm</a>
-          </li>
-          <li>
-            <a href="/about/coverage/">Coverage</a>
-          </li>
-          <li>
-            <a href="/about/history/">History</a>
-          </li>
-          <li>
-            <a href="/about/our-partners/">Our Partners</a>
-          </li>
-          <li>
-            <a href="/about/professional-team/">Professional Team</a>
-          </li>
-    </ul>
-  </div>
-</div>
-
+  
   <div class="main-column">
 		<!--<div class="crumb-trail">
 			<span><a href="/default.aspx">Home</a> &gt; <a href="/home/about-our-firm.aspx">About Our Firm</a> &gt; Company Overview</span>
@@ -285,8 +264,7 @@ Together we bring more than 100 years of experience and offer the only full serv
 
   $(document).ready(function(){
   $('.banner').fadeIn('slow');
-  //$('.banner').shuffle();
-  //$('.home-page-rotator').jshowoff({ speed: 8000, changeSpeed: 600, hoverPause: false });
+  $('.home-page-rotator').jshowoff({ speed: 8000, changeSpeed: 600, hoverPause: false });
   $('.banner').jshowoff({ speed: 8000, changeSpeed: 600, effect: 'fade', hoverPause: false });
   $('.jshowoff-slidelinks').addClass('clearfix');
   $('.home-banner-wrap').css('background-image', 'none');

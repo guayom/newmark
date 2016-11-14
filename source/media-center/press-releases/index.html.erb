@@ -8,14 +8,18 @@ date: 2016-09-23
 ---
 <div class="news">
   <div class="list">
-    <% sub_pages_by_date('media-center/press-releases').each do |resource| %>
+    <% dato.articles.sort_by { |resource| resource.date }.reverse.each do |article| %>
       <div class="odd">
-    		<div class="date"><strong><%= resource.data.date %></strong></div>
-    		<div class="detail-info">
-    			<div><a class="detail-link" href="<%= resource.url %>"><%= resource.data.title %></a></div>
-    		</div>
-    		<div class="clear"></div>
-      	</div>
+        <div class="date"><strong><%= article.date %></strong></div>
+        <div class="detail-info">
+          <div>
+            <a class="detail-link" href="/media-center/press-releases/<%= article.title.parameterize %>/">
+              <%= article.title %>
+            </a>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
     <% end %>
   </div>
 </div>
