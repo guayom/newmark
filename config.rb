@@ -68,7 +68,7 @@ activate :dato,
 
 #Create article pages
 dato.articles.each do |article|
-  proxy "/media-center/press-releases/#{article.title.parameterize}/index.html", "/media-center/press-releases/template.html", :locals => { :article => article, :imagen => article.image }, :ignore => true
+  proxy "/media-center/press-releases/#{article.title.parameterize}/index.html", "/media-center/press-releases/template.html", :locals => { :article => article }, :ignore => true
 end
 
 
