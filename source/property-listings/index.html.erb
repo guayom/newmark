@@ -1,0 +1,22 @@
+---
+layout: content
+---
+<h1>Property Listings</h1>
+
+<% dato.listings.each do |property| %>
+  <div class="property">
+    <div class="title-bar">
+      <a href="/property-listings/<%= property.slug %>"><%= property.property_name %></a>
+    </div>
+    <div class="property-image">
+      <%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url %>
+    </div>
+    <div class="property-description">
+      <%= Nokogiri::HTML.parse(property.description).css('p').first.text %>
+    </div>
+    <div class="property-price">
+      <%= property.sales_price %>
+      <a href="/property-listings/<%= property.slug %>" class="button">Learn more</a>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,40 @@
+<% wrap_layout :content do %>
+<div class="property-detail">
+  <h1><%= property.property_name %></h1>
+  <h2 class="sales-price">Sales price: <strong>$<%= property.sales_price %></strong></h2>
+  <a class="button" href="<%= property.attachment.file.to_url %>" target="_blank" download="<%= property.property_name %> - Property listing brochure">Download brochure</a>
+
+  <div class="listings-slider-container">
+    <div class="listings-slider">
+      <% property.images.each do |image| %>
+        <%= image_tag image.image.file.width(550).to_url %>
+      <% end %>
+    </div>
+  </div>
+  <br/>
+
+  <%= property.description %>
+
+  <div id="map"></div>
+  <script>
+      function initMap() {
+        var uluru = {lat: <%= property.location.latitude %>, lng:<%= property.location.longitude %>};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGDf3NcaYQWd3qzdLd-qRgptU369jPQhk&callback=initMap">
+    </script>
+
+  <% content_for(:sidebar) do %>
+    <%= partial "partials/sidebar_regular", :locals => { :collection => 'property-listings', :title => "Property Listings" } %>
+  <% end %>
+</div>
+<% end %>

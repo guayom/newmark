@@ -39,6 +39,8 @@ items:
         url: "/services/new-mark-grubb-central-america-green/"
       - title: Value Added Services
         url: "/services/value-added-services/"
+  - title: "Property Listings"
+    url: /property-listings/
   - title: "Media Center"
     url: "#"
     submenu:

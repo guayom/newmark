@@ -63,7 +63,10 @@ dato.articles.each do |article|
   proxy "/media-center/press-releases/#{article.title.parameterize}/index.html", "/media-center/press-releases/template.html", :locals => { :article => article }, :ignore => true
 end
 
-
+#Create property pages
+dato.listings.each do |property|
+  proxy "/property-listings/#{property.slug}/index.html", "/property-listings/template.html", :locals => { :property => property }, :ignore => true
+end
 
 # Build-specific configuration
 configure :build do
