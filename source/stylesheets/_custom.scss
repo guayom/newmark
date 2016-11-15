@@ -183,10 +183,51 @@ a[disabled] {
     top: 0;
     right: 0;
   }
-  h1{font-size: 1.5em;}
+  h1{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
 }
 .sales-price{
   font-size: 1.3em;
+}
+
+.property{
+  .title-bar{
+    background:$celeste;
+    color: #fff;
+    padding: 6px 10px ;
+    margin-bottom: 10px;
+    a{
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .property-image{
+    float: left;
+    width: 170px;
+  }
+  .property-description{
+    float: left;
+    width: 375px;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+    text-align: justify;
+  }
+  .property-price{
+    float: left;
+    width: 90px;
+    text-align: right;
+  }
+  .price{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $main_color;
+    margin-top: 10px;
+    display: inline-block;
+  }
 }
 
 //Slider
@@ -194,6 +235,10 @@ a[disabled] {
   .jshowoff{
     width: 550px;
   }
+}
+.listings-slider{
+  text-align: center;
+  padding-top: 10px;
 }
 .jshowoff-slidelinks{
   width: 100%;

@@ -6,17 +6,15 @@ layout: content
 <% dato.listings.each do |property| %>
   <div class="property">
     <div class="title-bar">
-      <a href="/property-listings/<%= property.slug %>"><%= property.property_name %></a>
+      <a href="/property-listings/<%= property.slug %>"><%= property.property_name %> - <%= property.short_address %></a>
     </div>
     <div class="property-image">
-      <%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url %>
+      <a href="/property-listings/<%= property.slug %>"><%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url %></a>
     </div>
     <div class="property-description">
-      <%= Nokogiri::HTML.parse(property.description).css('p').first.text %>
-    </div>
-    <div class="property-price">
-      <%= property.sales_price %>
-      <a href="/property-listings/<%= property.slug %>" class="button">Learn more</a>
+      <%= Nokogiri::HTML.parse(property.description).css('p').first.text %> <a href="/property-listings/<%= property.slug %>"> Learn more >></a>
+      <br/>
+      <span class="price">$<%= number_with_delimiter(property.sales_price) %></span>
     </div>
   </div>
 <% end %>
