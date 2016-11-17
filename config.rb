@@ -53,7 +53,7 @@ helpers do
 end
 
 activate :dato,
-  domain: 'https://admin.ngcentralamerica.com',
+  domain: 'https://newmark.admin.datocms.com',
   token: '93430d102176ac91ec983a7ca1aa7eb7d7769b06570c9a408c',
   base_url: 'https://ngcentralamerica.com'
 
