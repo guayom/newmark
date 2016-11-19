@@ -65,7 +65,7 @@ news:
    url: http://inversioninmobiliariacr.com/index.php/mercado-inmobiliario/oficinas/item/648-sector-oeste-se-deprime-frente-a-oferta-de-oficinas
 ---
 <ul>
-  <% current_page.data.news.reverse.each do |article| %>
+  <% dato.in_the_news.each do |article| %>
     <li>
       <strong><%= article.date %></strong>
       <a href="<%= article.url %>" target="_blank"><%= article.title %></a>
