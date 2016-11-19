@@ -259,14 +259,15 @@ ul.fly-out
 	z-index: 99;
 	top: 24px;
 	left: 0;
-	width: 246px;
+	width: 290px;
 	background: #ed1847;
 	opacity: .9;
 	filter: alpha(opacity=90);
 	border-top: 3px solid #fff;
+  padding: 7px 0 10px 0;
 }
 .fly-out li                   { float: none; display: inline; }
-.main-nav .fly-out li a       { float: none; margin: 0; padding-right: 26px; width: 210px; text-align: left; text-transform: none; color: #fff; background: #ed1847; }
+.main-nav .fly-out li a       { float: none; margin: 0; padding-right: 26px; width: 100%; text-align: left; text-transform: none; color: #fff; background: #ed1847;     box-sizing: border-box;}
 .main-nav .fly-out li a:hover { color: #ed1847; background: #fff; }
 
 .main-nav .fly-out li .sub-fly-out a       { margin: 0 -26px 0 0; padding: 4px 0 1px 20px; width: 226px; background: url(../images/bkg-flyout-third.png) 10px 9px no-repeat; }
