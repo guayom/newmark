@@ -1,25 +1,25 @@
 <div class="jshowoff-position">
   <div class="home-page-rotator">
-    <% data.pdfs.pdfs.each do |pdf| %>
+    <% dato.files.select{|f| f.home == true }.each do |file| %>
       <div>
         <table cellpadding="0" cellspacing="0" width="345" border="0">
           <tbody>
             <tr>
-              <td width="160">
-                <img src="/pdfs/<%= pdf['file'] %>.png" border="0" width="160" height="160">
+              <td width="160" style="text-align: center;">
+                <img src="<%= file.image.url %>&w=120&h=145&fit=crop" border="0">
               </td>
               <td width="194">
                 <p class="text-left">
                   <span class="style4">
                     <span style="color: #d0103a;">
-                      <strong><%= pdf['title'] %><br></strong>
+                      <strong><%= file.title %><br></strong>
                     </span>
-                    <%= pdf['description'] %>
+                    <%= file.description %>
                     <br>
                   </span>
                 <span class="style1">
                   <span class="style2">
-                    <a href="/pdfs/<%= pdf['file'] %>.pdf" target="_blank" download="<%= pdf['title'] %>">Download the PDF</a>
+                    <a href="<%= file.file.path %>" target="_blank" download="<%= file.title %>">Download the PDF</a>
                   </span>
                 </span>
                 </p>
