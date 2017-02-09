@@ -1,7 +1,7 @@
 <div class="home-banner-wrap">
   <div class="banner">
-    <% data.slider.imagenes.each do |imagen| %>
-      <img src="/images/<%= data.slider.src %>/<%= imagen %>" width="980" height="300" border="0" alt="NKF Home Banner">
+    <% dato.home_sliders.each do |imagen| %>
+      <img src="<%= imagen.image.url %>&w=980&h=300&fit=crop" alt="NKF Home Banner">
     <% end %>
   </div>
 </div>
