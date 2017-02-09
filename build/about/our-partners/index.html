@@ -126,6 +126,9 @@
           </ul>
         </li>
         <li>
+          <a href="/property-listings/">Property Listings</a>
+        </li>
+        <li>
           <a href="#">Media Center</a>
           <ul class="fly-out">
                 <li class="last">
@@ -158,7 +161,26 @@
           <div class="top-spacer"></div>
   <div class="left-column">
     <div class="subnav">
-      
+          <ul id="navID" class="navlist">
+  <li><h4>About us</h4></li>
+    <li>
+        <a href="/about/about-our-firm/">About Our Firm</a>
+    </li>
+    <li>
+        <a href="/about/coverage/">Coverage</a>
+    </li>
+    <li>
+        <a href="/about/history/">History</a>
+    </li>
+    <li>
+        <a href="#" disabled tabindex="-1">Our Partners</a>
+    </li>
+    <li>
+        <a href="/about/professional-team/">Professional Team</a>
+    </li>
+</ul>
+
+
     </div>
   </div>
   <div class="main-column">
@@ -175,7 +197,8 @@
 				<p class="highlight">
           
 				</p>
-				<p>Newmark Grubb Knight Frank is one of the three largest companies in the world of corporate real estate services. Together with its partners based in London and other alliances around the world, NGKF has 12,000 professionals operating in more than 370 offices on six continents.</p>
+				
+  <p>Newmark Grubb Knight Frank is one of the three largest companies in the world of corporate real estate services. Together with its partners based in London and other alliances around the world, NGKF has 12,000 professionals operating in more than 370 offices on six continents.</p>
 
 <p>NGKF is a leading specialist in providing corporate real estate solutions through an extensive global platform of integrated services such as tenant representation, representation of owners, global corporate services, sales, investment opportunities, capital markets (equity financing and debt), valuations, consulting , project management, property management, industry, logistics, hotels, land, and commercial centers.</p>
 
@@ -219,6 +242,9 @@
     </div>
   </li>
 </ul>
+
+
+
 
 			</div>
 		</div>
@@ -307,6 +333,7 @@
   $('.banner').fadeIn('slow');
   $('.home-page-rotator').jshowoff({ speed: 8000, changeSpeed: 600, hoverPause: false });
   $('.banner').jshowoff({ speed: 8000, changeSpeed: 600, effect: 'fade', hoverPause: false });
+  $('.listings-slider').jshowoff({ speed: 8000, changeSpeed: 600, effect: 'fade', hoverPause: false, links: true, controls: false, autoPlay:true});
   $('.jshowoff-slidelinks').addClass('clearfix');
   $('.home-banner-wrap').css('background-image', 'none');
   });

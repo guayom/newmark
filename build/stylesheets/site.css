@@ -715,11 +715,12 @@ ul.fly-out {
   z-index: 99;
   top: 24px;
   left: 0;
-  width: 246px;
+  width: 290px;
   background: #ed1847;
   opacity: .9;
   filter: alpha(opacity=90);
-  border-top: 3px solid #fff; }
+  border-top: 3px solid #fff;
+  padding: 7px 0 10px 0; }
 
 .fly-out li {
   float: none;
@@ -729,11 +730,12 @@ ul.fly-out {
   float: none;
   margin: 0;
   padding-right: 26px;
-  width: 210px;
+  width: 100%;
   text-align: left;
   text-transform: none;
   color: #fff;
-  background: #ed1847; }
+  background: #ed1847;
+  box-sizing: border-box; }
 
 .main-nav .fly-out li a:hover {
   color: #ed1847;
@@ -2363,3 +2365,85 @@ p {
 .navlist li h4 {
   padding: 5px 16px 5px;
   font-size: 1.2em; }
+
+a[disabled] {
+  pointer-events: none;
+  font-weight: bold; }
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
+
+.button {
+  display: inline-block;
+  clear: left;
+  background: #ED1847;
+  padding: 5px 8px;
+  color: #fff;
+  text-decoration: none; }
+  .button:hover {
+    background: #c30f37;
+    color: #fff; }
+
+.pull-right {
+  float: right; }
+
+.property-detail {
+  position: relative; }
+  .property-detail .button {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .property-detail h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px; }
+  .property-detail h2 {
+    font-size: 1.2em;
+    font-weight: bold; }
+
+.sales-price {
+  font-size: 1.3em; }
+
+.property .title-bar {
+  background: #00AECE;
+  color: #fff;
+  padding: 6px 10px;
+  margin-bottom: 10px; }
+  .property .title-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; }
+.property .property-image {
+  float: left;
+  width: 170px; }
+.property .property-description {
+  float: left;
+  width: 375px;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  text-align: justify; }
+.property .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ED1847;
+  margin-top: 10px;
+  display: inline-block; }
+
+.listings-slider-container .jshowoff {
+  width: 550px; }
+
+.listings-slider {
+  text-align: center;
+  padding-top: 10px; }
+
+.jshowoff-slidelinks {
+  width: 100%; }
+
+.jshowoff-slidelinks {
+  text-align: center;
+  padding: 0 10px; }
+  .jshowoff-slidelinks a {
+    display: inline-block;
+    float: none; }

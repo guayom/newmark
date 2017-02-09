@@ -65,7 +65,7 @@ end
 
 #Create property pages
 dato.listings.each do |property|
-  proxy "/property-listings/#{property.slug}/index.html", "/property-listings/template.html", :locals => { :property => property }, :ignore => true
+  proxy "/property-listings/#{property.property_name.parameterize}/index.html", "/property-listings/template.html", :locals => { :property => property }, :ignore => true
 end
 
 # Build-specific configuration

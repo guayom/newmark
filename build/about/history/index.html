@@ -126,6 +126,9 @@
           </ul>
         </li>
         <li>
+          <a href="/property-listings/">Property Listings</a>
+        </li>
+        <li>
           <a href="#">Media Center</a>
           <ul class="fly-out">
                 <li class="last">
@@ -158,7 +161,26 @@
           <div class="top-spacer"></div>
   <div class="left-column">
     <div class="subnav">
-      
+          <ul id="navID" class="navlist">
+  <li><h4>About us</h4></li>
+    <li>
+        <a href="/about/about-our-firm/">About Our Firm</a>
+    </li>
+    <li>
+        <a href="/about/coverage/">Coverage</a>
+    </li>
+    <li>
+        <a href="#" disabled tabindex="-1">History</a>
+    </li>
+    <li>
+        <a href="/about/our-partners/">Our Partners</a>
+    </li>
+    <li>
+        <a href="/about/professional-team/">Professional Team</a>
+    </li>
+</ul>
+
+
     </div>
   </div>
   <div class="main-column">
@@ -175,7 +197,11 @@
 				<p class="highlight">
           
 				</p>
-				Newmark Grubb Central America was founded in 2002 as a real estate consulting company. Newmark Grubb Central America goes far beyond being just a real estate brokerage firm. Our experience has taught us to focus not only on the present features of the business, but also on the creation of a long term relationship with our customers.
+				
+  Newmark Grubb Central America was founded in 2002 as a real estate consulting company. Newmark Grubb Central America goes far beyond being just a real estate brokerage firm. Our experience has taught us to focus not only on the present features of the business, but also on the creation of a long term relationship with our customers.
+
+
+
 
 			</div>
 		</div>
@@ -264,6 +290,7 @@
   $('.banner').fadeIn('slow');
   $('.home-page-rotator').jshowoff({ speed: 8000, changeSpeed: 600, hoverPause: false });
   $('.banner').jshowoff({ speed: 8000, changeSpeed: 600, effect: 'fade', hoverPause: false });
+  $('.listings-slider').jshowoff({ speed: 8000, changeSpeed: 600, effect: 'fade', hoverPause: false, links: true, controls: false, autoPlay:true});
   $('.jshowoff-slidelinks').addClass('clearfix');
   $('.home-banner-wrap').css('background-image', 'none');
   });

@@ -126,6 +126,9 @@
           </ul>
         </li>
         <li>
+          <a href="/property-listings/">Property Listings</a>
+        </li>
+        <li>
           <a href="#">Media Center</a>
           <ul class="fly-out">
                 <li class="last">
@@ -158,7 +161,26 @@
           <div class="top-spacer"></div>
   <div class="left-column">
     <div class="subnav">
-      
+          <ul id="navID" class="navlist">
+  <li><h4>About us</h4></li>
+    <li>
+        <a href="#" disabled tabindex="-1">About Our Firm</a>
+    </li>
+    <li>
+        <a href="/about/coverage/">Coverage</a>
+    </li>
+    <li>
+        <a href="/about/history/">History</a>
+    </li>
+    <li>
+        <a href="/about/our-partners/">Our Partners</a>
+    </li>
+    <li>
+        <a href="/about/professional-team/">Professional Team</a>
+    </li>
+</ul>
+
+
     </div>
   </div>
   <div class="main-column">
@@ -175,13 +197,17 @@
 				<p class="highlight">
           A Global Leader in Commercial Real Estate
 				</p>
-				Newmark Grubb Central America was founded by the partnership of RUT Group, the preeminent real estate services company in Central America, and Newmark Grubb Knight Frank the world’s largest commercial real estate services organization. We go beyond just being a real estate consulting group.
+				
+  Newmark Grubb Central America was founded by the partnership of RUT Group, the preeminent real estate services company in Central America, and Newmark Grubb Knight Frank the world’s largest commercial real estate services organization. We go beyond just being a real estate consulting group.
 
 Our experience has taught us to focus not only on the present characteristics of the business, but also on the creation of a long-term customer relationship, attending to the needs and expectations of each client in order to to best meet their requirements.
 
 Newmark Grubb Central America is comprised of a highly qualified multilingual team  of consultants (speaking Spanish, English, French, Portuguese and Italian) with extensive and comprehensive expertise in all real estate sectors.
 
 Together we bring more than 100 years of experience and offer the only full service commercial real estate services and consultancy company that completely covers the seven provinces of the country, possessing notable experience in various countries of the Americas. With a significant track record working as consultants in noteworthy  assignments in office, industrial, retail, multifamily/residential, hotel & resort markets, we also manage more than 15 million square meters (161 million square feet) of land, and residential and commercial real estate.
+
+
+
 
 			</div>
 		</div>
@@ -270,6 +296,7 @@ Together we bring more than 100 years of experience and offer the only full serv
   $('.banner').fadeIn('slow');
   $('.home-page-rotator').jshowoff({ speed: 8000, changeSpeed: 600, hoverPause: false });
   $('.banner').jshowoff({ speed: 8000, changeSpeed: 600, effect: 'fade', hoverPause: false });
+  $('.listings-slider').jshowoff({ speed: 8000, changeSpeed: 600, effect: 'fade', hoverPause: false, links: true, controls: false, autoPlay:true});
   $('.jshowoff-slidelinks').addClass('clearfix');
   $('.home-banner-wrap').css('background-image', 'none');
   });

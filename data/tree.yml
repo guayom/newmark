@@ -20,8 +20,7 @@ media-center:
   in-the-news: {}
   press-releases: {}
 partials: {}
-pdfs:
-  profiles: {}
+pdfs: {}
 privacy-policy.html.md: "/privacy-policy.html.md"
 property-listings: {}
 services:
