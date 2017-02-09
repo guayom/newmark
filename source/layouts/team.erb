@@ -36,13 +36,9 @@
           <span style="font-size: 8pt; font-weight: bold;"><%= current_page.data.title %><br></span>
           <%= current_page.data.highlight %><br/><br/>
           <p>
-            Newmark Grubb Central America<br/>
-            Oficentro Madrid<br/>
-            Suite 3-1<br/>
-            San Jose, Costa Rica<br/>
-            Pozos de Santa Ana<br/>
+            <%= dato.information.address %><br/>
             <%= current_page.data.email %><br/>
-            Tel / Fax +506 2203-5171<br/>
+            Tel / Fax <a href="tel:<%= dato.information.phone %>"><%= dato.information.phone %></a><br/>
             Mobile <%= current_page.data.mobile %>
           </p>
           <br/>

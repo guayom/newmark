@@ -6,18 +6,18 @@ category: contact
 weight: 0
 ---
 <strong>Email Address:</strong>
-info@ngcentralamerica.com
+<%= dato.information.email %>
 <br/>
 <strong>Address:</strong>
-Madrid Office Center, 3rd floor. Pozos, Santa Ana
+<%= dato.information.address %>
 <br/>
 <strong>Phone:</strong>
-(506) 2203-5171
+<a href="tel:<%= dato.information.phone %>"><%= dato.information.phone %></a>
 <br/>
 <strong>Fax:</strong>
-(506) 2203-5171
+<a href="tel:<%= dato.information.fax %>"><%= dato.information.fax %></a>
 
-<form action="https://formspree.io/info@ngcentralamerica.com" method="POST">
+<form action="https://formspree.io/<%= dato.information.email %>" method="POST">
 
   <div class="form-div">
     <span class="small">* Required fields</span>
