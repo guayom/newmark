@@ -1,0 +1,67 @@
+---
+layout: layout
+---
+<div class="top-spacer"></div>
+<div class="left-column">
+  <div class="subnav">
+    <ul id="navID" class="navlist">
+      <li><h4>Professional Team</h4></li>
+      <% dato.members.select{|m| m.bio.present? }.each do |person| %>
+        <li><a href="/about/professional-team/<%= person.name.parameterize %>" <%= "disabled tabindex='-1'" if person.name == member.name %>><%= person.name %></a></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<div class="main-column">
+  <div>
+    <div>
+      <h1 class="page-title">
+        <%= member.name %>
+      </h1>
+      <p><strong><%= member.job_title %></strong></p>
+    </div>
+    <div class="body-txt">
+      <%= member.bio %>
+    </div>
+  </div>
+</div>
+<div class="right-column">
+  <div class="clear"></div>
+  <div class="cross-refs">
+    <div class="cross-ref-group cross-ref-0">
+      <div class="cross-ref-group-body">
+        <% unless member.picture.nil? %>
+          <img src="<%= member.picture.url %>" alt="<%= member.name %>" class="imagen-team" />
+          <div class="clear"></div>
+        <% end %>
+        <span style="font-size: 8pt; font-weight: bold;"><%= member.name %><br></span>
+        <%= member.job_title %><br/><br/>
+        <p>
+          <%= dato.information.address %><br/>
+          <% unless member.email %><%= member.email %><br/><% end %>
+          Tel / Fax: <a href="tel:<%= dato.information.phone %>"><%= dato.information.phone %></a><br/>
+          <% unless member.mobile.nil? %>Mobile: <%= member.mobile %><% end %>
+        </p>
+        <br/>
+        <% unless member.profile.nil? %>
+          <a href="<%= member.profile.path %>" download="<%= member.name %> - Perfil Profesional">Download Profile</a>
+          <br/>
+        <% end %>
+        <br/>
+        <% unless member.specialties == "" or member.specialties.nil? %>
+          <span style="font-size: 8pt; font-weight: bold;">Areas of Specialization</span>
+          <div id="AreasOfSpecialization">
+            <%= member.specialties %>
+          </div>
+        <% end %>
+        <% unless member.years_of_experience.nil? %>
+          <p>
+            <span style="font-size: 8pt; font-weight: bold;">Years of Experience</span><br>
+            <%= member.years_of_experience %> years
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>

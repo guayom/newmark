@@ -1,21 +1,7 @@
 ---
 index.html.erb: "/property-listings/index.html.erb"
 about:
-  professional-team:
-    adrian-rodriguez:
-      en.html.md: "/about/professional-team/adrian-rodriguez/en.html.md"
-      es.html.md: "/about/professional-team/adrian-rodriguez/es.html.md"
-    carlos-robles:
-      en.html.md: "/about/professional-team/carlos-robles/en.html.md"
-      es.html.md: "/about/professional-team/carlos-robles/es.html.md"
-    david-behar:
-      en.html.md: "/about/professional-team/david-behar/en.html.md"
-      es.html.md: "/about/professional-team/david-behar/es.html.md"
-    frank-quiros:
-      en.html.md: "/about/professional-team/frank-quiros/en.html.md"
-      es.html.md: "/about/professional-team/frank-quiros/es.html.md"
-    pedro-sanchez:
-      en.html.md: "/about/professional-team/pedro-sanchez/en.html.md"
+  professional-team: {}
 media-center:
   in-the-news: {}
   press-releases: {}
@@ -35,5 +21,6 @@ services:
   project-management.html.md: "/services/project-management.html.md"
   valuation-and-advisory.html.md: "/services/valuation-and-advisory.html.md"
   value-added-services.html.md: "/services/value-added-services.html.md"
+templates: {}
 terms-of-use.html.md: "/terms-of-use.html.md"
 thanks.html.md: "/thanks.html.md"

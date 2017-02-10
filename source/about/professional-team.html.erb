@@ -4,62 +4,16 @@ body_class: content
 category: about
 layout: about
 weight: 5
-team:
-  -
-    nombre: "Carlos R. Robles"
-    puesto: "Managing Director / President"
-    folder: carlos-robles
-    profiles:
-      - english
-      - spanish
-  -
-    nombre: "Pedro E. Sanchez"
-    puesto: "Market Analysis / Valuations"
-    folder: pedro-sanchez
-    profiles:
-      - english
-  -
-    nombre: "Frank Quirós"
-    puesto: "Market Analysis / Real Estate Consultant"
-    folder: frank-quiros
-    profiles:
-      - english
-      - spanish
-  -
-    nombre: "Manuel Calvo"
-    puesto: Appraiser
-  -
-    nombre: "David Behar"
-    puesto: "Commercial Manager / Real Estate Consultant"
-  -
-    nombre: "Adrián Rodríguez"
-    puesto: "Real Estate Consultant"
-    folder: adrian-rodriguez
-    profiles:
-      - english
-      - spanish
-  -
-    nombre: "Diego Ouellette"
-    puesto: "Real Estate Consultant / Investment / Hospitality"
-  -
-    nombre: "Alejandro Mazariegos"
-    puesto: "Capital Markets / Private Money Sources / Real Estate Consultant"
-  -
-    nombre: "Roxana Ruiz"
-    puesto: "Executive Support"
-  -
-    nombre: "Carlos Alberto Alvarado"
-    puesto: "Project Manager"
 ---
 <ul class="team-member-list">
-<% current_page.data.team.each do |member| %>
+<% dato.members.each do |member| %>
   <li>
-    <% if member.profiles.present? and member.profiles.include?('english')  %>
-      <strong><a href="/about/professional-team/<%= member.folder %>/en"><%= member.nombre %></strong></a>
+    <% if member.bio.present? %>
+      <strong><a href="/about/professional-team/<%= member.name.parameterize %>"><%= member.name %></strong></a>
     <% else %>
-      <strong><%= member.nombre %></strong>
+      <strong><%= member.name %></strong>
     <% end %>
-    <br/><i><%= member.puesto %></i>
+    <br/><i><%= member.job_title %></i>
   </li>
 <% end %>
 </ul>

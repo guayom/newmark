@@ -68,6 +68,12 @@ dato.listings.each do |property|
   proxy "/property-listings/#{property.property_name.parameterize}/index.html", "/property-listings/template.html", :locals => { :property => property }, :ignore => true
 end
 
+dato.members.each do |member|
+  unless member.bio.nil?
+    proxy "/about/professional-team/#{member.name.parameterize}/index.html", "/templates/member-template.html", :locals => {:member => member}, :ignore => true
+  end
+end
+
 # Build-specific configuration
 configure :build do
 end
