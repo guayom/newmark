@@ -50,6 +50,10 @@ helpers do
     end.sort_by { |resource| resource.data.weight }
   end
 
+  def get_download_link(file, titulo)
+    "https://dato-images.imgix.net#{file.file.path}?dl=#{file.title.parameterize}"
+  end
+
 end
 
 activate :dato,

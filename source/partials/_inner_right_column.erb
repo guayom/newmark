@@ -21,7 +21,7 @@
 				<% dato.files.select{|f| f.sidebar == true }.each do |file| %>
 					<div class="cross-ref external">
 						<h4>
-							<a href="<%= file.file.path %>" target="_blank" download="<%= file.title %>">
+							<a href="<%= get_download_link(file, file.title) %>">
 								<%= file.title %>
 							</a>
 						</h4>
