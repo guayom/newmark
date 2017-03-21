@@ -3,9 +3,11 @@
   <h1 class="page-title"><%= article.title %></h1>
   <%= "<h2>#{article.subtitle}</h2>" if article.subtitle.present? %>
 
+  <% unless article.image.nil? %>
   <div class="body-txt">
     <%= image_tag article.image.file.width(550).to_url %>
   </div>
+  <% end %>
 
   <div class="highlight">
     <%= article.intro %>

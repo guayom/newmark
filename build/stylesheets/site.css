@@ -2405,6 +2405,10 @@ a[disabled] {
 .sales-price {
   font-size: 1.3em; }
 
+.property:after {
+  content: "";
+  display: table;
+  clear: both; }
 .property .title-bar {
   background: #00AECE;
   color: #fff;
