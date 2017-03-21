@@ -1,12 +1,12 @@
 ---
 index.html.erb: "/property-listings/index.html.erb"
-about:
-  professional-team: {}
+about: {}
 media-center:
   in-the-news: {}
   press-releases: {}
 partials: {}
-pdfs: {}
+pdfs:
+  profiles: {}
 privacy-policy.html.md: "/privacy-policy.html.md"
 property-listings: {}
 services:

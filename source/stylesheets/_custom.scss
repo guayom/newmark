@@ -197,6 +197,7 @@ a[disabled] {
 }
 
 .property{
+  @include clearfix;
   .title-bar{
     background:$celeste;
     color: #fff;
