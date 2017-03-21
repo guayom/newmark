@@ -51,7 +51,7 @@ helpers do
   end
 
   def get_download_link(file)
-    "https://dato-images.imgix.net#{file.file.path}?dl=#{file.title.parameterize}"
+    "https://www.datocms-assets.com#{file.file.path}?dl=#{file.title.parameterize}"
   end
 
 end

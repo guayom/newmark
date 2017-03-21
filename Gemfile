@@ -14,4 +14,4 @@ gem 'middleman'
 gem 'middleman-livereload'
 gem 'middleman-navtree'
 
-gem "middleman-dato"
+gem "middleman-dato", ">=0.7.2"
