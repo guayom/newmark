@@ -18,10 +18,11 @@
 
   <%= property.description %>
 
-  <h2>Location</h2>
+  <% unless property.location.nil? %>
+    <h2>Location</h2>
 
-  <div id="map"></div>
-  <script>
+    <div id="map"></div>
+    <script>
       function initMap() {
         var uluru = {lat: <%= property.location.latitude %>, lng:<%= property.location.longitude %>};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -38,6 +39,7 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGDf3NcaYQWd3qzdLd-qRgptU369jPQhk&callback=initMap">
     </script>
+  <% end %>
 
   <% content_for(:sidebar) do %>
     <%= partial "partials/sidebar_regular", :locals => { :collection => 'property-listings', :title => "Property Listings" } %>
