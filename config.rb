@@ -35,6 +35,8 @@ end
 # Helpers
 ###
 
+require 'nokogiri'
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def nav_active(path)
@@ -52,6 +54,10 @@ helpers do
 
   def get_download_link(file)
     "https://www.datocms-assets.com#{file.file.path}?dl=#{file.title.parameterize}.pdf"
+  end
+
+  def extract_first_paragraph(string)
+    Nokogiri::HTML.parse(string).css('p').first.text
   end
 
 end

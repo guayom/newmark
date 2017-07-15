@@ -15,3 +15,5 @@ gem 'middleman-livereload'
 gem 'middleman-navtree'
 
 gem "middleman-dato", ">=0.7.2"
+
+gem 'nokogiri'
