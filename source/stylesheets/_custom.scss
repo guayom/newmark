@@ -191,9 +191,15 @@ a[disabled] {
 .property-detail{
   position: relative;
   .button{
-    position: absolute;
+    position: static;
     top: 0;
     right: 0;
+    margin-bottom: 15px;
+
+    @include mq('desktop') {
+      position: absolute;
+      margin-bottom: 0;
+    }
   }
   h1{
     font-size: 1.5em;
@@ -258,12 +264,19 @@ a[disabled] {
 //Slider
 .listings-slider-container{
   .jshowoff{
-    width: 550px;
+    width: 100%;
+
+    @include mq('desktop') {
+      width: 550px;
+    }
   }
 }
 .listings-slider{
   text-align: center;
-  padding-top: 10px;
+
+  @include mq('desktop') {
+    padding-top: 10px;
+  }
 }
 .jshowoff-slidelinks{
   width: 100%;
