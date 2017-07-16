@@ -1,7 +1,5 @@
 <% wrap_layout :content do %>
 <div class="property-detail">
-  <h1><%= property.property_name %></h1>
-  <p><%= property.short_address %></p>
   <h2 class="sales-price">Sales price: <strong>$<%= property.sales_price %></strong></h2>
   <% unless property.attachment.nil? %>
     <a class="button" href="<%= property.attachment.file.to_url %>" target="_blank" download="<%= property.property_name %> - Property listing brochure">Download brochure</a>

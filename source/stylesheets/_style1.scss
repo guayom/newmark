@@ -120,7 +120,7 @@ body         { text-align: center; background: #e4e2e1; }
 }
 .main-column  {
   box-sizing: border-box;
-  padding: 20px 20px 40px 20px;
+  padding: 20px;
   text-align: justify;
   width: 100%;
 
@@ -135,7 +135,18 @@ body         { text-align: center; background: #e4e2e1; }
     max-width: 100%;
   }
 }
-.right-column { padding: 10px 15px 15px 15px; width: 170px; font-size: 11px; }
+.right-column {
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  font-size: 11px;
+  border-top: solid 1px #ddd;
+
+  @include mq('desktop') {
+    box-sizing: content-box;
+    width: 170px;
+  }
+}
 .no-right-column .main-column { padding: 10px 40px 40px 20px; width: 749px; }
 
 .body-txt           { }
@@ -188,12 +199,13 @@ body         { text-align: center; background: #e4e2e1; }
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 10px 20px 20px;
+  padding: 10px 20px 0;
   background: #fff;
 
   @include mq('desktop') {
     width: 940px;
     box-sizing: content-box;
+    padding: 10px 20px 20px;
   }
 
   img {
@@ -221,6 +233,14 @@ body         { text-align: center; background: #e4e2e1; }
     width: 370px;
     padding: 20px 0 0 20px;
   }
+
+  .jshowoff-slidelinks {
+    display: none;
+
+    @include mq('desktop') {
+      display: block;
+    }
+  }
 }
 
 .home h1            { padding: 0 0 7px; font-size: 14px; font-weight: bold; text-transform: inherit; }
@@ -231,13 +251,17 @@ body         { text-align: center; background: #e4e2e1; }
 .home-page-rotator      {
   box-sizing: border-box;
   display: block;
-  width: 100%;
+  width: calc(100% + 40px);
   padding: 18px 25px;
   background: #d8d1c9;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @include mq('desktop') {
     width: 323px;
     box-sizing: content-box;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   td:first-of-type {
@@ -323,8 +347,8 @@ body         { text-align: center; background: #e4e2e1; }
 	text-indent: -9999px;
   margin-top: -16px;
 }
-.jshowoff-1 .jshowoff-prev           { left: 5px; background: url(../images/bkg-home-rotate-controls-2.png) no-repeat 0 0; }
-.jshowoff-1 .jshowoff-next           { right: 5px; background: url(../images/bkg-home-rotate-controls-2.png) no-repeat -16px 0; }
+.jshowoff-1 .jshowoff-prev           { left: -10px; background: url(../images/bkg-home-rotate-controls-2.png) no-repeat 0 0; }
+.jshowoff-1 .jshowoff-next           { right: -10px; background: url(../images/bkg-home-rotate-controls-2.png) no-repeat -16px 0; }
 .jshowoff-1 .jshowoff-prev:hover     { background: url(../images/bkg-home-rotate-controls-2.png) no-repeat 0 0; }
 .jshowoff-1 .jshowoff-next:hover     { background: url(../images/bkg-home-rotate-controls-2.png) no-repeat -16px 0 }
 

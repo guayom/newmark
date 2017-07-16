@@ -12,13 +12,23 @@
 		<div>
 			<div>
 				<h1 class="page-title">
-					<%= current_page.data.title %>
+          <% if defined? property %>
+					  <%= property.property_name %>
+          <% else %>
+            <%= current_page.data.title %>
+          <% end %>
 				</h1>
 			</div>
 			<div class="body-txt">
-				<p class="highlight">
-          <%= current_page.data.highlight %>
-				</p>
+        <% if defined? property and defined? property.short_address %>
+  				<p class="highlight">
+            <%= property.short_address %>
+  				</p>
+        <% elsif current_page.data.highlight.present? %>
+          <p class="highlight">
+            <%= current_page.data.highlight %>
+          </p>
+        <% end %>
 				<%= yield %>
 			</div>
 		</div>
