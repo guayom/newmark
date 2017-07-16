@@ -347,7 +347,7 @@ ul.fly-out
   height: auto;
 
   @include mq('desktop') {
-    padding: 0 26px 0 0;
+    padding: 3px 15px;
   }
 }
 .main-nav .fly-out li a:hover { color: #ed1847; background: #fff; }
