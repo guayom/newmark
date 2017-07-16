@@ -251,3 +251,21 @@ a[disabled] {
     float: none;
   }
 }
+
+
+.hide-xs {
+  display: none;
+
+  @include mq('desktop') {
+    display: block;
+  }
+}
+
+.recent-news {
+  ul {
+    margin: 0 0 1.4em 0;
+     @include mq('desktop') {
+       margin: 0 0 1.4em 1.2em;
+     }
+  }
+}
