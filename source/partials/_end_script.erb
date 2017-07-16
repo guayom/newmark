@@ -27,6 +27,20 @@
   $('.jshowoff-slidelinks').addClass('clearfix');
   $('.home-banner-wrap').css('background-image', 'none');
   });
+
+
+  //GUAYO
+
+  //hamburguer
+  var hamburger = document.getElementById("hamburger");
+  var mainnav = document.getElementById('main-nav-wrap');
+
+  hamburger.onclick = function(event) {
+    hamburger.classList.toggle('is-active');
+    mainnav.classList.toggle('is-open');
+  };
+
+
 </script>
 <!--[if IE 8]></div><![endif]-->
 <!--[if IE 7]></div><![endif]-->

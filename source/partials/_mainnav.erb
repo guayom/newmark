@@ -1,4 +1,12 @@
-<div class="main-nav-wrap">
+<div class="main-nav-wrap" id="main-nav-wrap">
+  <div id="toggleMenu">
+    <h2>Menu</h2>
+    <button class="hamburger hamburger--squeeze" type="button" id="hamburger">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
   <div class="main-nav">
     <ul id="navlist">
       <% data.navigation.items.each do |item| %>
