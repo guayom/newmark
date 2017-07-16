@@ -210,6 +210,14 @@ a[disabled] {
 
 .property{
   @include clearfix;
+  margin-bottom: 20px;
+
+  @include mq('desktop') {
+    width: 375px;
+    padding: 0 0 0 10px;
+    margin-bottom: 0;
+  }
+
   .title-bar{
     background:$celeste;
     color: #fff;
@@ -228,10 +236,15 @@ a[disabled] {
   }
   .property-description{
     float: left;
-    width: 375px;
+    width: 100%;
     box-sizing: border-box;
-    padding: 0 0 0 10px;
+    padding: 0;
     text-align: justify;
+
+    @include mq('desktop') {
+      width: 375px;
+      padding: 0 0 0 10px;
+    }
   }
   .price{
     font-size: 1.2em;
