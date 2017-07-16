@@ -217,6 +217,7 @@ body         { text-align: center; background: #e4e2e1; }
 .home-main-column   {
   position: relative;
   float: left;
+  padding-bottom: 20px;
 
   @include mq('desktop') {
     width: 529px;
