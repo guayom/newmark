@@ -145,12 +145,24 @@ p{
     color: #666;
   }
 }
+
 .navlist{
   li h4{
-    padding: 5px 16px 5px;
+    padding: 0 20px;
     font-size: 1.2em;
+    margin-bottom: 10px;
+
+    @include mq('desktop') {
+      padding: 5px 16px 5px;
+      margin-bottom: 20px;
+    }
+  }
+
+  li a {
+    padding: 3px 20px;
   }
 }
+
 a[disabled] {
     pointer-events: none;
     font-weight: bold;

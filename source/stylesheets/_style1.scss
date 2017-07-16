@@ -120,7 +120,7 @@ body         { text-align: center; background: #e4e2e1; }
 }
 .main-column  {
   box-sizing: border-box;
-  padding: 0 20px 40px 20px;
+  padding: 20px 20px 40px 20px;
   text-align: justify;
   width: 100%;
 
@@ -1311,6 +1311,12 @@ span.ufd.plain {
 	height: 16px;
 	background: #00abcd url(../images/ufd-btn-blue.png) no-repeat right 8px;
 }
-.home .ufd-wrap                             { position: static; top: auto; left: auto; }
-.home #ufd-container .plain div.list-scroll { background-color: #00abcd; }
+.home .ufd-wrap {
+  position: static;
+  top: auto;
+  left: auto;
+}
+.home #ufd-container .plain div.list-scroll {
+  background-color: #00abcd;
+}
 #ufd-container .plain li.active             { color: #00abcd; }
