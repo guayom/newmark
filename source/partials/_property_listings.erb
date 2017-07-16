@@ -8,6 +8,6 @@
   <div class="property-description">
     <%= extract_first_paragraph(property.description) %><a href="/property-listings/<%= property.property_name.parameterize %>"> Learn more >></a>
     <br/>
-    <span class="price">$<%= number_with_delimiter(property.sales_price) %></span>
+    <span class="price">$<%= number_with_delimiter(property.sales_price) %><%= " por m<sup>2</sup>".html_safe if property.precio_por_metro_cuadrado == true %></span>
   </div>
 </div>
