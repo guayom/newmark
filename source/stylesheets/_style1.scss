@@ -82,8 +82,23 @@ body         { text-align: center; background: #e4e2e1; }
 }
 .page-header-right .search-button { float: left; }
 
-.top-spacer        { width: 980px; height: 10px; background: #fff; }
-.main              { margin: 0 auto; width: 980px; background: #fff url(../images/bkg-main-column.png) repeat-y; }
+.top-spacer        {
+  display: none;
+  @include mq('desktop') {
+    height: 10px;
+    width: 980px;
+    background: #fff;
+  }
+}
+.main              {
+  margin: 0 auto;
+  background: #fff;
+
+  @include mq('desktop') {
+    background: #fff url(../images/bkg-main-column.png) repeat-y;
+    width: 980px;
+  }
+}
 
 .no-right-column .main   { background: #fff url(../images/bkg-main-column-single.png) repeat-y; }
 
@@ -92,8 +107,34 @@ body         { text-align: center; background: #e4e2e1; }
 	overflow: hidden;
 	float: left;
 }
-.left-column  { padding: 35px 0px 40px 0; width: 171px; }
-.main-column  { padding: 10px 40px 40px 20px; width: 549px; }
+.left-column  {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+
+  @include mq('desktop') {
+    box-sizing: content-box;
+    width: 171px;
+    padding: 35px 0px 40px 0;
+  }
+}
+.main-column  {
+  box-sizing: border-box;
+  padding: 0 20px 40px 20px;
+  text-align: justify;
+  width: 100%;
+
+  @include mq('desktop') {
+    box-sizing: content-box;
+    padding: 10px 40px 40px 20px;
+    width: 549px;
+    text-align: left;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
 .right-column { padding: 10px 15px 15px 15px; width: 170px; font-size: 11px; }
 .no-right-column .main-column { padding: 10px 40px 40px 20px; width: 749px; }
 
@@ -321,7 +362,7 @@ body         { text-align: center; background: #e4e2e1; }
 	position: relative;
 	z-index: 5;
 	margin: 0 auto;
-	padding: 0 0 20px 10px;
+	padding: 0 20px 20px 20px;
 	background: #ed1847;
   width: 100%;
   box-sizing: border-box;
@@ -350,6 +391,7 @@ body         { text-align: center; background: #e4e2e1; }
   @include mq('desktop') {
     width: 970px;
   }
+
 }
 
 .main-nav ul, .main-nav li
@@ -362,40 +404,48 @@ body         { text-align: center; background: #e4e2e1; }
 
 }
 
+.main-nav ul {
+  @include clearfix;
+  width: 100%;
+}
+
 .main-nav li {
-  float: left;
   display: block;
   position: relative;
   width: 100%;
+
   @include mq('desktop') {
     width: auto;
+    float: left;
   }
 }
 
 .main-nav a
 {
+  box-sizing: border-box;
 	float: none;
 	display: block;
-	margin: 3px 23px 0 0;
-	padding: 3px 22px 2px 10px;
-	height: 16px;
+	padding: 3px 0;
 	font-size: 15px;
-	/*font-weight: bold;*/
 	text-align: left;
 	text-transform: capitalize;
-	/*text-transform: uppercase;*/
 	text-decoration: none;
 	white-space: nowrap;
 	line-height: 1em;
 	color: #fff;
   font-weight: bold;
+  margin: 0 0 3px 0;
 
   @include mq('desktop') {
+    box-sizing: content-box;
     float: left;
+    height: 16px;
     text-align: center;
     font-weight: normal;
     font-size: 12px;
+    margin: 3px 23px 0 0;
     background: url(../images/bkg-main-nav-arrow.png) right 7px no-repeat;
+    padding: 3px 10px;
   }
 }
 
@@ -406,7 +456,14 @@ body         { text-align: center; background: #e4e2e1; }
 
 /*\*/ * html .main-nav a { margin: 3px 13px 0 0; } /**/
 
-.main-nav a:hover, .main-nav .current a { color: #ed1847; background-color: #fff; background-image: url(../images/bkg-main-nav-arrow-hover.png); }
+.main-nav a:hover, .main-nav .current a {
+  color: #ed1847;
+  background-color: #fff;
+
+  @include mq('desktop') {
+    background-image: url(../images/bkg-main-nav-arrow-hover.png);
+  }
+}
 
 .main-nav li:hover .fly-out, .main-nav li.sfhover .fly-out { display: block; }
 
@@ -434,21 +491,21 @@ ul.fly-out
 }
 .fly-out li                   { float: none; display: inline; }
 .main-nav .fly-out li a {
+  box-sizing: border-box;
   float: none;
   margin: 0;
-  padding: 5px 0 5px 10px;
+  padding: 5px 0;
   width: 100%;
   text-align: left;
   text-transform: none;
   color: #fff;
   background: #ed1847;
-  box-sizing: border-box;
   font-weight: normal;
   font-size: 12px;
-
   height: auto;
 
   @include mq('desktop') {
+    box-sizing: content-box;
     padding: 3px 15px;
   }
 }
@@ -469,7 +526,12 @@ ul.fly-out
 
 /* ------------------------------- =Subnav --------------------------------- */
 
-.subnav                { margin: 0 0 30px; }
+.subnav                {
+  margin: 0;
+  @include mq('desktop') {
+    margin: 0 0 30px;
+  }
+}
 .subnav ul, .subnav li { margin: 0;	padding: 0;	background: none; border: none; }
 .subnav a.title        { font-size: 12px; color: #ed1847; }
 .subnav a.title:hover  { background: none; text-decoration: none; color: #F00; }
