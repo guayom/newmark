@@ -2,7 +2,7 @@
 <div class="property-detail">
   <h1><%= property.property_name %></h1>
   <p><%= property.short_address %></p>
-  <h2 class="sales-price">Sales price: <strong>$<%= property.sales_price %><%= " por m<sup>2</sup>".html_safe if property.precio_por_metro_cuadrado == true %></strong></h2>
+  <h2 class="sales-price"><%= property.tipo_de_precio %> price: <strong>$<%= property.sales_price %><%= " por m<sup>2</sup>".html_safe if property.precio_por_metro_cuadrado == true %></strong></h2>
   <% unless property.attachment.nil? %>
     <a class="button" href="<%= property.attachment.file.to_url %>" target="_blank" download="<%= property.property_name %> - Property listing brochure">Download brochure</a>
   <% end %>
