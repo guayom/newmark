@@ -2,23 +2,36 @@
 <div class="property-detail">
   <h1><%= property.property_name %></h1>
   <p><%= property.short_address %></p>
-  <h2 class="sales-price"><%= property.tipo_de_precio %> price: <strong>$<%= property.sales_price %><%= " por m<sup>2</sup>".html_safe if property.precio_por_metro_cuadrado == true %></strong></h2>
+  <h2 class="sales-price">Price: <strong><%= property.price %></strong></h2>
   <% unless property.attachment.nil? %>
     <a class="button" href="<%= property.attachment.file.to_url %>" target="_blank" download="<%= property.property_name %> - Property listing brochure">Download brochure</a>
   <% end %>
 
-  <div class="listings-slider-container">
-    <div class="listings-slider">
-      <% property.images.each do |image| %>
-        <%= image_tag image.image.file.width(320).to_url %>
-      <% end %>
+  <% if property.images.count > 0 %>
+    <div class="listings-slider-container">
+      <div class="listings-slider">
+        <% property.images.each do |image| %>
+          <%= image_tag image.image.file.width(320).to_url %>
+        <% end %>
+      </div>
     </div>
-  </div>
-  <br/>
+    <br/>
+  <% end %>
 
-  <%= property.description %>
+  <%= property.description+"<br/><br/>".html_safe unless property.description == "" or  property.description == "no description" %>
+
+  <h2>Possible uses:</h2>
+  <%= property.possible_uses %>
+
+
+  <% unless property.other_info.nil? %>
+    <br/><br/>
+    <h2>Other information:</h2>
+    <%= property.other_info %>
+  <% end %>
 
   <% unless property.location.nil? %>
+    <br/><br/>
     <h2>Location</h2>
 
     <div id="map"></div>
