@@ -5,8 +5,13 @@
         <table cellpadding="0" cellspacing="0" border="0">
           <tbody>
             <tr>
+<<<<<<< HEAD
               <td style="text-align: center;">
                 <img src="<%= file.image.url %>&w=120&h=145&fit=crop" border="0">
+=======
+              <td width="160" style="text-align: center;">
+                <%= image_tag file.image.url(w: 120, h: 145, fit: "crop", fm: :jpg), :border => '0' %>
+>>>>>>> master
               </td>
               <td>
                 <p class="text-left">

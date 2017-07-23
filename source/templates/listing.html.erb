@@ -1,0 +1,62 @@
+---
+layout: content
+---
+<div class="property-detail">
+  <h1><%= @property.property_name %></h1>
+  <p><%= @property.short_address %></p>
+  <h2 class="sales-price">Price: <strong><%= @property.price %></strong></h2>
+  <% unless @property.attachment.nil? %>
+    <a class="button" href="<%= @property.attachment.file.to_url %>" target="_blank" download="<%= @property.property_name %> - Property listing brochure">Download brochure</a>
+  <% end %>
+
+  <% if @property.images.count > 0 %>
+    <div class="listings-slider-container">
+      <div class="listings-slider">
+        <% @property.images.each do |image| %>
+          <%= image_tag image.image.file.width(320).to_url %>
+        <% end %>
+      </div>
+    </div>
+    <br/>
+  <% end %>
+
+  <%= @property.description+"<br/><br/>".html_safe unless @property.description == "" or  @property.description == "no description" %>
+
+  <h2>Possible uses:</h2>
+  <%= @property.possible_uses %>
+
+
+  <% unless @property.other_info.nil? %>
+    <br/><br/>
+    <h2>Other information:</h2>
+    <%= @property.other_info %>
+  <% end %>
+
+  <% unless @property.location.nil? %>
+    <br/><br/>
+    <h2>Location</h2>
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: <%= @property.location.latitude %>, lng:<%= @property.location.longitude %>};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: uluru,
+          scrollwheel: false
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeb5JPuU9C4mz5ZznTCsmgmKfXSTQIbug&callback=initMap">
+    </script>
+  <% end %>
+
+  <% content_for(:sidebar) do %>
+    <%= partial "partials/sidebar_regular", :locals => { :collection => 'property-listings', :title => "Property Listings" } %>
+  <% end %>
+</div>

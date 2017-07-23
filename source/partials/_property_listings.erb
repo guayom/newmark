@@ -2,12 +2,14 @@
   <div class="title-bar">
     <a href="/property-listings/<%= property.property_name.parameterize %>/"><%= property.property_name %> - <%= property.short_address %></a>
   </div>
+  <% if property.cover.present? %>
   <div class="property-image">
     <a href="/property-listings/<%= property.property_name.parameterize %>/"><%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url %></a>
   </div>
+  <% end %>
   <div class="property-description">
-    <%= extract_first_paragraph(property.description) %><a href="/property-listings/<%= property.property_name.parameterize %>"> Learn more >></a>
+    <%= extract_first_paragraph(property.description) %> <a href="/property-listings/<%= property.property_name.parameterize %>">Learn more >></a>
     <br/>
-    <span class="price">$<%= number_with_delimiter(property.sales_price) %></span>
+    <span class="price"><%= property.price %></span>
   </div>
 </div>

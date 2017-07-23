@@ -1,7 +1,7 @@
 <div class="home-banner-wrap">
   <div class="banner">
     <% dato.home_sliders.each do |imagen| %>
-      <img src="<%= imagen.image.url %>&w=980&h=300&fit=crop" alt="NKF Home Banner">
+      <%= image_tag imagen.image.url(w: 980, h: 300, fit: "crop", fm: :jpg) %>
     <% end %>
   </div>
 </div>
