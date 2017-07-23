@@ -4,20 +4,20 @@ function popupWindow (url, name, width, height, properties) {
 	if (!name) name = "popWin";
 	if (!width) width = "700";
 	if (!height) height = "480";
-	
+
 	var features = "width=" + width + ",height=" + height;
 
 	//	-- properties --
 	//	not set or false    : standard clean window with no address bar, etc.
 	//	some string         : use the string
-	
+
 	if (!properties || properties == false) {
 		features += ",left=100,top=100,toolbar=0,location=0,directories=0,status=0,menubar=0,resizable=1,scrollbars=1";
 	} else {
 		features += properties;
 	}
-	
-	var popWin = window.open(url, name, features);	
+
+	var popWin = window.open(url, name, features);
 	checkPopped(popWin);
 	return popWin;
 }
@@ -51,7 +51,7 @@ function toggleDisplay (elmID, defaultDisplay, force) {
 		// nn4 way
 		var elmStyle = document.layers[elmID].style;
 	}
-	
+
 	// Force display to defaultDisplay if force is set
 	if (force)
 	{
@@ -66,7 +66,7 @@ function toggleDisplay (elmID, defaultDisplay, force) {
 		else
 			var defaultDisplay = 'block';
 	}
-	
+
 	// If not forced toggle it's display
 	if (elmStyle.display == 'none') {
 		// if set to 'none' toggle to whatever the default for this element is
@@ -114,9 +114,9 @@ function hideSelects(action) {
 	//documentation for this script at http://www.shawnolson.net/a/1198/hide-select-menus-javascript.html
 	//possible values for action are 'hidden' and 'visible'
 	if (action!='visible') { action='hidden'; }
-	
+
 	if(!HideDropDownNav) return;
-	
+
 	if (navigator.userAgent.indexOf("MSIE 6.") >= 0)
 	{
 		for (var S = 0; S < document.forms.length; S++)
