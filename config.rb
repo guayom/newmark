@@ -1,17 +1,24 @@
-###
-# Page options, layouts, aliases and proxies
-###
-set :site_url, "https://ngcentralamerica.com"
-
-
-# Per-page layout changes:
-#
-# With no layout
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+configure :development do
+  activate :livereload
+end
+
+activate :directory_indexes
+
+activate :dato,
+  domain: 'https://newmark.admin.datocms.com',
+  token: '93430d102176ac91ec983a7ca1aa7eb7d7769b06570c9a408c',
+  base_url: 'https://newmark.netlify.com/'
+
+
+set :site_url, "https://ngcentralamerica.com"
 set :markdown_engine, :redcarpet
+
+ignore "/templates/*"
+
 activate :navtree do |options|
   options.data_file = 'tree.yml' # The data file where our navtree is stored.
   options.automatic_tree_updates = true # The tree.yml file will be updated automatically when source files are changed.
@@ -22,13 +29,25 @@ activate :navtree do |options|
   options.ext_whitelist = ['.md', '.markdown'] # If you add extensions (like '.md') to this array, it builds a whitelist of filetypes for inclusion in the navtree.
 end
 
-activate :directory_indexes
+dato.articles.each do |article|
+  proxy "/media-center/press-releases/#{article.title.parameterize}/index.html", "/media-center/press-releases/template.html", :locals => { :article => article }, :ignore => true
+end
 
-# General configuration
+dato.members.each do |member|
+  unless member.bio.nil?
+    proxy "/about/professional-team/#{member.name.parameterize}/index.html", "/templates/member-template.html", :locals => {:member => member}, :ignore => true
+  end
+end
 
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
+dato.listings.each do |listing|
+  proxy "/property-listings/#{listing.property_name.parameterize}.html", "/templates/listing.html",
+    locals: { property: listing }
+end
+
+activate :pagination
+paginate dato.listings, "/property-listings", "/templates/listings.html", suffix: "/page/:num/index", per_page: 5
+
+configure :build do
 end
 
 ###
@@ -60,30 +79,4 @@ helpers do
     Nokogiri::HTML.parse(string).css('p').first.text
   end
 
-end
-
-activate :dato,
-  domain: 'https://newmark.admin.datocms.com',
-  token: '93430d102176ac91ec983a7ca1aa7eb7d7769b06570c9a408c',
-  base_url: 'https://newmark.netlify.com/'
-
-
-#Create article pages
-dato.articles.each do |article|
-  proxy "/media-center/press-releases/#{article.title.parameterize}/index.html", "/media-center/press-releases/template.html", :locals => { :article => article }, :ignore => true
-end
-
-#Create property pages
-dato.listings.each do |property|
-  proxy "/property-listings/#{property.property_name.parameterize}/index.html", "/property-listings/template.html", :locals => { :property => property }, :ignore => true
-end
-
-dato.members.each do |member|
-  unless member.bio.nil?
-    proxy "/about/professional-team/#{member.name.parameterize}/index.html", "/templates/member-template.html", :locals => {:member => member}, :ignore => true
-  end
-end
-
-# Build-specific configuration
-configure :build do
 end
