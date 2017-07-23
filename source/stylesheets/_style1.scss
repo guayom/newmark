@@ -567,7 +567,7 @@ ul.fly-out
     border: solid 1px #ddd;
     padding: 5px;
     border-box: content-box;
-    height: 2em;
+    height: auto;
 
     @include mq('desktop') {
       display: none;
