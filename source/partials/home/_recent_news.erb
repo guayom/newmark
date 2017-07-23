@@ -1,7 +1,12 @@
 <div class="recent-news">
-  <h2>
-    Recent News
-  </h2>
+  <div class="title-bar">
+    <div class="title-bar-main">
+      <h2>Recent news</h2>
+    </div>
+    <div class="title-bar-secondary">
+      <a href="/media-center/press-releases/">Más noticias</a>
+    </div>
+  </div>
   <ul>
     <% dato.articles.sort_by { |resource| resource.date }.reverse.first(5).each do |article| %>
       <li>
@@ -15,5 +20,4 @@
       </li>
     <% end %>
   </ul>
-  <a href="/media-center/press-releases/">Más noticias</a>
 </div>

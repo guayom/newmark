@@ -199,29 +199,30 @@ body         { text-align: center; background: #e4e2e1; }
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 10px 20px 0;
+  padding: 0 20px 0;
   background: #fff;
 
   @include mq('desktop') {
     width: 940px;
     box-sizing: content-box;
-    padding: 10px 20px 20px;
+    padding: 0 20px 20px;
   }
 
   img {
     max-width: 100%;
   }
 }
-.home .main         { margin: 0; width: 100%; background: url(../images/bkg-home-main.png) repeat-y 0 0; }
+.home .main         { margin: 0; width: 100%; background: #fff; }
 
 .home-main-column   {
   position: relative;
   float: left;
   padding-bottom: 20px;
+  box-sizing: border-box;
 
   @include mq('desktop') {
-    width: 529px;
-    padding: 25px 20px 0 0;
+    width: 549px;
+    padding: 0 20px 0 0;
   }
 }
 .home-right-column  {
@@ -364,8 +365,8 @@ body         { text-align: center; background: #e4e2e1; }
 .home-rotate-table p     { margin: 0 0 7px; }
 .home-rotate-table a     { text-decoration: none; }
 
+.corporate-principals    { margin: 0 0 30px 0; }
 /*
-.corporate-principals    { margin: 30px 0 0 0; font-family: Georgia, Serif; font-weight: bold; }
 .corporate-principals h2 { margin: 0 0 8px; font-size: 10px; color: Blue; }
 .corporate-principals a  { font-weight: normal; }
 */

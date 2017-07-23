@@ -1,0 +1,20 @@
+<div class="featured-listings">
+  <div class="title-bar">
+    <div class="title-bar-main">
+      <h2>Featured Listings</h2>
+    </div>
+    <div class="title-bar-secondary">
+      <a href="/property-listings">See all</a>
+    </div>
+  </div>
+  <ul>
+    <% dato.listings.select{|l| l.featured == true}.first(3).each do |listing| %>
+      <li>
+        <a href="/property-listings/<%= listing.property_name.parameterize %>">
+          <%= image_tag listing.cover.url(w: 400, h: 300, fit: "crop") %>
+          <%= listing.property_name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>

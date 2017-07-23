@@ -302,3 +302,30 @@ a[disabled] {
      }
   }
 }
+
+.title-bar {
+  @include grid-container;
+  margin: 20px 0;
+  border-bottom: 2px solid $main_color;
+
+  h2 {
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+  }
+}
+
+.title-bar-main {
+}
+
+.title-bar-secondary {
+  float: right;
+
+  a, a:visited, a:focus, a:active {
+    color: $main_color;
+    font-weight: 300;
+    line-height: 1.9em;
+    text-decoration: none;
+  }
+}

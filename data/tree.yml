@@ -4,7 +4,8 @@ about: {}
 media-center:
   in-the-news: {}
   press-releases: {}
-partials: {}
+partials:
+  home: {}
 pdfs:
   profiles: {}
 privacy-policy.html.md: "/privacy-policy.html.md"
