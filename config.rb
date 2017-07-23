@@ -40,7 +40,7 @@ dato.members.each do |member|
 end
 
 dato.listings.each do |listing|
-  proxy "/property-listings/#{listing.property_name.parameterize}.html", "/templates/listing.html",
+  proxy "/property-listings/#{listing.property_name.parameterize}/index.html", "/templates/listing.html",
     locals: { property: listing }
 end
 
