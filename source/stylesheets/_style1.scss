@@ -463,15 +463,14 @@ body         { text-align: center; background: #e4e2e1; }
   margin: 0 0 3px 0;
 
   @include mq('desktop') {
-    box-sizing: content-box;
     float: left;
     height: 16px;
     text-align: center;
     font-weight: normal;
     font-size: 12px;
-    margin: 3px 23px 0 0;
+    margin: 3px 0;
     background: url(../images/bkg-main-nav-arrow.png) right 7px no-repeat;
-    padding: 3px 10px;
+    padding: 3px 23px 3px 10px;
   }
 }
 
@@ -509,13 +508,13 @@ ul.fly-out
     display: none;
     position: absolute;
   	z-index: 99;
-  	top: 24px;
+  	top: 19px;
   	left: 0;
   	width: 290px;
     padding: 7px 0 10px 0;
   }
 }
-.fly-out li                   { float: none; display: inline; }
+.fly-out li                   { float: none; display: block; }
 .main-nav .fly-out li a {
   box-sizing: border-box;
   float: none;
@@ -531,7 +530,7 @@ ul.fly-out
   height: auto;
 
   @include mq('desktop') {
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 3px 15px;
   }
 }
