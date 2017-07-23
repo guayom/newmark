@@ -6,7 +6,7 @@
           <tbody>
             <tr>
               <td width="160" style="text-align: center;">
-                <img src="<%= file.image.url %>&w=120&h=145&fit=crop" border="0">
+                <%= image_tag file.image.url(w: 120, h: 145, fit: "crop", fm: :jpg), :border => '0' %>
               </td>
               <td width="194">
                 <p class="text-left">
