@@ -109,7 +109,7 @@ body         { text-align: center; background: #e4e2e1; }
 }
 .left-column  {
   box-sizing: border-box;
-  padding: 0;
+  padding: 20px 20px 0 20px;
   width: 100%;
 
   @include mq('desktop') {
@@ -553,12 +553,33 @@ ul.fly-out
 
 .subnav                {
   margin: 0;
+
   @include mq('desktop') {
     margin: 0 0 30px;
   }
 
   h4 {
-    font-size: 1.2em;
+    font-size: 1.3em;
+  }
+
+  select {
+    width: 100%;
+    border: solid 1px #ddd;
+    padding: 5px;
+    border-box: content-box;
+    height: 2em;
+
+    @include mq('desktop') {
+      display: none;
+    }
+  }
+
+  ul {
+    display: none;
+
+    @include mq('desktop') {
+      display: block;
+    }
   }
 }
 .subnav ul, .subnav li { margin: 0;	padding: 0;	background: none; border: none; }

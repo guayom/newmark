@@ -10,3 +10,8 @@
     </li>
   <% end %>
 </ul>
+<select onChange="window.location.href=this.value" class="subnav-mobile-navigation">
+  <% sub_pages(collection).each do |page| %>
+    <option value="<%= page.url %>"><%= page.data.title %></option>
+  <% end %>
+</select>
