@@ -260,7 +260,7 @@ body         { text-align: center; background: #e4e2e1; }
   margin-right: -20px;
 
   @include mq('desktop') {
-    width: 323px;
+    width: 320px;
     box-sizing: content-box;
     margin-left: 0;
     margin-right: 0;
@@ -349,8 +349,8 @@ body         { text-align: center; background: #e4e2e1; }
 	text-indent: -9999px;
   margin-top: -16px;
 }
-.jshowoff-1 .jshowoff-prev           { left: -10px; background: url(../images/bkg-home-rotate-controls-2.png) no-repeat 0 0; }
-.jshowoff-1 .jshowoff-next           { right: -10px; background: url(../images/bkg-home-rotate-controls-2.png) no-repeat -16px 0; }
+.jshowoff-1 .jshowoff-prev           { left: 5px; background: url(../images/bkg-home-rotate-controls-2.png) no-repeat 0 0; }
+.jshowoff-1 .jshowoff-next           { right: 5px; background: url(../images/bkg-home-rotate-controls-2.png) no-repeat -16px 0; }
 .jshowoff-1 .jshowoff-prev:hover     { background: url(../images/bkg-home-rotate-controls-2.png) no-repeat 0 0; }
 .jshowoff-1 .jshowoff-next:hover     { background: url(../images/bkg-home-rotate-controls-2.png) no-repeat -16px 0 }
 
