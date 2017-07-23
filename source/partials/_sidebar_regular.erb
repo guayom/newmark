@@ -1,5 +1,5 @@
+<h4><%= title %></h4>
 <ul id="navID" class="navlist">
-  <li><h4><%= title %></h4></li>
   <% sub_pages(collection).each do |page| %>
     <li>
       <% if page.data.title == current_page.data.title %>

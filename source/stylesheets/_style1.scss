@@ -113,9 +113,9 @@ body         { text-align: center; background: #e4e2e1; }
   width: 100%;
 
   @include mq('desktop') {
-    box-sizing: content-box;
+    box-sizing: border-box;
     width: 171px;
-    padding: 35px 0px 40px 0;
+    padding: 20px;
   }
 }
 .main-column  {
@@ -126,7 +126,7 @@ body         { text-align: center; background: #e4e2e1; }
 
   @include mq('desktop') {
     box-sizing: content-box;
-    padding: 10px 40px 40px 20px;
+    padding: 20px 40px 40px 20px;
     width: 549px;
     text-align: left;
   }
@@ -555,6 +555,10 @@ ul.fly-out
   margin: 0;
   @include mq('desktop') {
     margin: 0 0 30px;
+  }
+
+  h4 {
+    font-size: 1.2em;
   }
 }
 .subnav ul, .subnav li { margin: 0;	padding: 0;	background: none; border: none; }
@@ -1159,6 +1163,7 @@ html[xmlns] .clearfix  { display: block; }
 		overflow: visible;
 		color: #000;
 		background: #fff;
+    box-sizing: border-box;
 	}
 
 
