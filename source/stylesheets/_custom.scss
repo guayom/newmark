@@ -344,3 +344,11 @@ a[disabled] {
     text-decoration: none;
   }
 }
+
+.content .home-banner-wrap {
+  display: none;
+
+  @include mq('desktop') {
+    display: block;
+  }
+}

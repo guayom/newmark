@@ -108,11 +108,13 @@ body         { text-align: center; background: #e4e2e1; }
 	float: left;
 }
 .left-column  {
+  background: #f9f9f9;
   box-sizing: border-box;
-  padding: 20px 20px 0 20px;
+  padding: 10px 20px 15px 20px;
   width: 100%;
 
   @include mq('desktop') {
+    background: #fff;
     box-sizing: border-box;
     width: 171px;
     padding: 20px;
@@ -559,7 +561,13 @@ ul.fly-out
   }
 
   h4 {
-    font-size: 1.3em;
+    font-size: 1em;
+    margin-bottom: 0;
+
+    @include mq('desktop') {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+    }
   }
 
   select {
