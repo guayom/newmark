@@ -11,3 +11,7 @@ layout: content
 <% if pager.next_page %>
   <%= link_to "Next page", pager.page_path(pager.next_page) %>
 <% end %>
+
+<% content_for(:sidebar) do %>
+  <%= partial 'partials/sidebars/listings', :locals => {property: dato.listings.last}  %>
+<% end %>
