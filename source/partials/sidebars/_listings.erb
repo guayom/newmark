@@ -5,7 +5,7 @@
       <% if page.property_name == property.property_name %>
         <a href="#" disabled tabindex="-1"><%= page.property_name %></a>
       <% else %>
-        <a href="<%= "/proerty_listings/#{page.property_name.parameterize}" %>"><%= page.property_name %></a>
+        <a href="/property-listings/<%= page.property_name.parameterize %>"><%= page.property_name %></a>
       <% end %>
     </li>
   <% end %>
