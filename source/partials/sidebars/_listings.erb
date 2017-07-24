@@ -12,6 +12,6 @@
 </ul>
 <select onChange="window.location.href=this.value" class="subnav-mobile-navigation">
   <% dato.listings.select{|l| l.featured == true }.first(10).each do |page| %>
-    <option value="<%= "/proerty_listings/#{page.property_name.parameterize}" %>"><%= page.property_name %></option>
+    <option value="<%= "/property-listings/#{page.property_name.parameterize}" %>"><%= page.property_name %></option>
   <% end %>
 </select>
