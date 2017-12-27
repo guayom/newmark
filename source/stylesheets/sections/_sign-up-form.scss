@@ -1,26 +1,17 @@
 .sign-up-form-container {
   position: relative;
-  padding: 20px;
   box-sizing: border-box;
-
   margin: 0 auto;
-  background: #36393B;
-  text-align: center;
-
-  @include mq('desktop') {
-    width: 980px;
-  }
+  color: #000;
 }
 
 #mc_embed_signup {
   text-align: left;
   font-size: 1.2em;
-  text-align: center;
+  margin-bottom: 20px;
 
   h2 {
-    color: #fff;
     font-size: 16px;
-    text-align: center;
   }
 
   label {
@@ -36,7 +27,7 @@
     display: block;
     padding: 10px;
     box-shadow: 0;
-    border: 0;
+    border: 1px solid #ddd;
     width: 100%;
     box-sizing: border-box;
   }
@@ -57,11 +48,6 @@
   box-sizing: border-box;
   margin-right: 10px;
   margin-bottom: 10px;
-
-  @include mq('desktop') {
-    width: 25%;
-    margin-bottom: 0;
-  }
 }
 
 .button-input {

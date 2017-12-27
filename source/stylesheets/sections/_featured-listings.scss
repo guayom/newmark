@@ -8,10 +8,12 @@
     @include grid-container;
     @include grid-collapse;
   }
+
   li {
     background: none;
     padding: 0;
     @include grid-column(4);
+    margin-bottom: 20px;
 
     a, a:active, a:visited, a:focus {
       color: $gris;
