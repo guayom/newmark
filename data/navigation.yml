@@ -50,3 +50,6 @@ items:
         url: "/media-center/in-the-news"
   - title: Contact Us
     url: "/contact-us"
+    submenu:
+      - title: "Sign up to our newsletter"
+        url: "/sign-up/"
