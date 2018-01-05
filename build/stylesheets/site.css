@@ -442,14 +442,16 @@ body {
   float: left; }
 
 .left-column {
+  background: #f9f9f9;
   box-sizing: border-box;
-  padding: 0;
+  padding: 10px 20px 15px 20px;
   width: 100%; }
   @media only screen and (min-width: 1248px) {
     .left-column {
-      box-sizing: content-box;
+      background: #fff;
+      box-sizing: border-box;
       width: 171px;
-      padding: 35px 0px 40px 0; } }
+      padding: 20px; } }
 
 .main-column {
   box-sizing: border-box;
@@ -459,7 +461,7 @@ body {
   @media only screen and (min-width: 1248px) {
     .main-column {
       box-sizing: content-box;
-      padding: 10px 40px 40px 20px;
+      padding: 20px 40px 40px 20px;
       width: 549px;
       text-align: left; } }
   .main-column img {
@@ -921,6 +923,27 @@ ul.fly-out {
   @media only screen and (min-width: 1248px) {
     .subnav {
       margin: 0 0 30px; } }
+  .subnav h4 {
+    font-size: 1em;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 1248px) {
+      .subnav h4 {
+        font-size: 1.3em;
+        margin-bottom: 20px; } }
+  .subnav select {
+    width: 100%;
+    border: solid 1px #ddd;
+    padding: 5px;
+    border-box: content-box;
+    height: auto; }
+    @media only screen and (min-width: 1248px) {
+      .subnav select {
+        display: none; } }
+  .subnav ul {
+    display: none; }
+    @media only screen and (min-width: 1248px) {
+      .subnav ul {
+        display: block; } }
 
 .subnav ul, .subnav li {
   margin: 0;
@@ -1868,7 +1891,8 @@ html[xmlns] .clearfix {
     float: none;
     overflow: visible;
     color: #000;
-    background: #fff; }
+    background: #fff;
+    box-sizing: border-box; }
 
   ul li {
     padding: 0 0 .3em 1.2em;
@@ -2574,14 +2598,22 @@ span.callout {
 .main-column p img {
   max-width: 100%; }
 
-.recent-news ul li .date {
-  line-height: 1.3;
-  font-weight: bold; }
-.recent-news ul li a {
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-  color: #0094B3; }
+.recent-news dl {
+  margin: 0; }
+.recent-news dt {
+  width: 30%;
+  float: left;
+  margin: 0; }
+  @media only screen and (min-width: 1248px) {
+    .recent-news dt {
+      width: 15%; } }
+.recent-news dd {
+  width: 70%;
+  float: left;
+  margin: 0; }
+  @media only screen and (min-width: 1248px) {
+    .recent-news dd {
+      width: 85%; } }
 
 p {
   text-align: justify; }
@@ -2617,6 +2649,10 @@ p {
 .team-member-list i {
   color: #666; }
 
+.navlist li {
+  margin-bottom: 6px; }
+  .navlist li a {
+    padding: 0; }
 .navlist li h4 {
   padding: 0 20px;
   font-size: 1.2em;
@@ -2625,8 +2661,6 @@ p {
     .navlist li h4 {
       padding: 5px 16px 5px;
       margin-bottom: 20px; } }
-.navlist li a {
-  padding: 3px 20px; }
 
 a[disabled] {
   pointer-events: none;
@@ -2682,7 +2716,8 @@ a[disabled] {
     background: #00AECE;
     color: #fff;
     padding: 6px 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    border-bottom: none; }
     .property .title-bar a {
       color: #fff;
       text-decoration: none;
@@ -2764,6 +2799,56 @@ a[disabled] {
     line-height: 1.9em;
     text-decoration: none; }
 
+.content .home-banner-wrap {
+  display: none; }
+  @media only screen and (min-width: 1248px) {
+    .content .home-banner-wrap {
+      display: block; } }
+
+.sign-up-form-container {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  color: #000; }
+
+#mc_embed_signup {
+  text-align: left;
+  font-size: 1.2em;
+  margin-bottom: 20px; }
+  #mc_embed_signup h2 {
+    font-size: 16px; }
+  #mc_embed_signup label {
+    display: block;
+    margin-right: 5px;
+    text-align: left;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400; }
+  #mc_embed_signup input[type=text], #mc_embed_signup input[type=email] {
+    display: block;
+    padding: 10px;
+    box-shadow: 0;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box; }
+  #mc_embed_signup input[type=submit] {
+    display: inline-block;
+    padding: 10px 40px;
+    margin: 0;
+    border: 0;
+    border-radius: 0; }
+
+.mc-field-group {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+.button-input {
+  display: inline-block; }
+
 .featured-listings {
   width: 100%;
   margin-bottom: 40px; }
@@ -2782,7 +2867,8 @@ a[disabled] {
     padding: 0;
     width: calc(33.33333% - 26.66667px);
     float: left;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-bottom: 20px; }
     .featured-listings li a, .featured-listings li a:active, .featured-listings li a:visited, .featured-listings li a:focus {
       color: #4a4a4a;
       text-decoration: none;
