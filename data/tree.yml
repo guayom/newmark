@@ -1,14 +1,14 @@
 ---
 index.html.erb: "/media-center/press-releases/index.html.erb"
-about: {}
+about:
+  professional-team: {}
 media-center:
   in-the-news: {}
   press-releases: {}
 partials:
   home: {}
   sidebars: {}
-pdfs:
-  profiles: {}
+pdfs: {}
 privacy-policy.html.md: "/privacy-policy.html.md"
 services:
   asset-property-portfolio-management.html.md: "/services/asset-property-portfolio-management.html.md"
