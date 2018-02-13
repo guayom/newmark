@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag :slick %>
+    <%= stylesheet_link_tag :"slick-theme" %>
 
     <script type="text/javascript" language="javaScript">
 			var ApplicationPath = '';
@@ -22,7 +24,7 @@
 			var HideDropDownNav = false;
 		</script>
 
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <%= javascript_include_tag :jquery_rotate %>
     <%= javascript_include_tag :common %>
   </head>
@@ -51,5 +53,20 @@
     </div>
     <%= partial "partials/page_footer" %>
     <%= partial "partials/end_script" %>
+    <script type="text/javascript" src="/javascripts/slick.min.js"></script>
+    <script>
+    $('.home-slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      arrows: true,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 3000
+    });
+    </script>
   </body>
 </html>

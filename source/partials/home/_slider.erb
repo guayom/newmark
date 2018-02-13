@@ -1,0 +1,22 @@
+<div class="home-slider">
+  <% dato.listings.select{|l| l.featured == true}.first(6).each do |listing| %>
+    <div>
+      <div class="home-slider-image">
+        <a href="/property-listings/<%= listing.property_name.parameterize %>">
+          <% if listing.cover.nil? %>
+            <%= image_tag "http://via.placeholder.com/400x300?text=No+Image" %>
+          <% else %>
+            <%= image_tag listing.cover.url(w: 600, h: 400, fit: "crop") %>
+          <% end %>
+        </a>
+      </div>
+      <div class="home-slider-text">
+        <h4>
+          <a href="/property-listings/<%= listing.property_name.parameterize %>">
+            <%= listing.property_name %>
+          </a>
+        </h4>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -7,18 +7,5 @@
       <a href="/property-listings">See all</a>
     </div>
   </div>
-  <ul>
-    <% dato.listings.select{|l| l.featured == true}.first(6).each do |listing| %>
-      <li>
-        <a href="/property-listings/<%= listing.property_name.parameterize %>">
-          <% if listing.cover.nil? %>
-            <%= image_tag "http://via.placeholder.com/400x300?text=No+Image" %>
-          <% else %>
-            <%= image_tag listing.cover.url(w: 400, h: 300, fit: "crop") %>
-          <% end %>
-          <%= listing.property_name %>
-        </a>
-      </li>
-    <% end %>
-  </ul>
+  <%= partial "partials/home/slider" %>
 </div>
