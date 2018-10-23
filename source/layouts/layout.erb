@@ -13,8 +13,6 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <%= stylesheet_link_tag :site %>
-    <%= stylesheet_link_tag :slick %>
-    <%= stylesheet_link_tag :"slick-theme" %>
 
     <script type="text/javascript" language="javaScript">
 			var ApplicationPath = '';
@@ -53,20 +51,5 @@
     </div>
     <%= partial "partials/page_footer" %>
     <%= partial "partials/end_script" %>
-    <script type="text/javascript" src="/javascripts/slick.min.js"></script>
-    <script>
-    $('.home-slider').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true,
-      arrows: true,
-      fade: true,
-      cssEase: 'linear',
-      autoplay: true,
-      autoplaySpeed: 3000
-    });
-    </script>
   </body>
 </html>
