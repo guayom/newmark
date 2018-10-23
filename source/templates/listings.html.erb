@@ -5,12 +5,8 @@ layout: content
 <% items.each do |property| %>
   <%= partial "partials/property_listings", :locals => {:property => property} %>
 <% end %>
-<% if pager.previous_page %>
-  <%= link_to "Previous page", pager.page_path(pager.previous_page) %>
-<% end %>
-<% if pager.next_page %>
-  <%= link_to "Next page", pager.page_path(pager.next_page) %>
-<% end %>
+
+
 
 <% content_for(:sidebar) do %>
   <%= partial 'partials/sidebars/listings', :locals => {property: dato.listings.last}  %>
