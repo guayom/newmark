@@ -45,7 +45,7 @@ dato.listings.each do |listing|
 end
 
 activate :pagination
-paginate dato.listings, "/property-listings", "/templates/listings.html", suffix: "/page/:num/index", per_page: 5
+paginate dato.listings[0...8], "/property-listings", "/templates/listings.html", suffix: "/page/:num/index", per_page: 5
 
 configure :build do
 end
