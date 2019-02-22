@@ -199,6 +199,13 @@ a[disabled] {
     color: #fff;
   }
 }
+
+.button-gray {
+  background: $grisAzulado;
+  font-weight: bold;
+  text-align: center;
+  align-self: flex-end;
+}
 .pull-right{
   float: right;
 }
@@ -233,11 +240,14 @@ a[disabled] {
   margin-bottom: 20px;
 
   .title-bar{
-    background:$celeste;
+    background:$grisMedio;
     color: #fff;
-    padding: 6px 10px ;
-    margin-bottom: 10px;
+    padding: 3px 10px ;
+    margin-bottom: 20px;
     border-bottom: none;
+    text-align: center;
+    text-transform: uppercase;
+
     a{
       color: #fff;
       text-decoration: none;
@@ -246,20 +256,19 @@ a[disabled] {
     }
   }
   .property-image{
-    float: left;
     width: 170px;
     cursor: pointer;
   }
   .property-description{
-    float: left;
+    flex: 1 1;
     width: 100%;
     box-sizing: border-box;
     padding: 0;
-    text-align: justify;
+    text-align: left;
 
     @include mq('desktop') {
       width: 375px;
-      padding: 0 0 0 10px;
+      padding: 0 20px;
     }
   }
   .price{
@@ -269,6 +278,21 @@ a[disabled] {
     margin-top: 10px;
     display: inline-block;
   }
+}
+
+.property-content {
+  @include mq('desktop') {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+}
+
+.pdf-button-container {
+  width: 120px;
+  flex: none;
+  display: flex;
+  align-content: flex-end;
 }
 
 //Slider
