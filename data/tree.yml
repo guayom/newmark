@@ -1,7 +1,6 @@
 ---
 index.html.erb: "/media-center/press-releases/index.html.erb"
-about:
-  professional-team: {}
+about: {}
 media-center:
   in-the-news: {}
   press-releases: {}
