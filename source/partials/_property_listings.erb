@@ -14,7 +14,9 @@
       <span class="price"><%= property.price %></span>
     </div>
     <div class="pdf-button-container">
-      <a class="button button-gray" href="<%= property.attachment.file.to_url %>" target="_blank" download="<%= property.property_name %> - Property listing brochure">More information</a>
+      <% if property.attachment %>
+        <a class="button button-gray" href="<%= property.attachment.file.to_url %>" target="_blank" download="<%= property.property_name %> - Property listing brochure">More information</a>
+      <% end %>
     </div>
   </div>
 </div>
