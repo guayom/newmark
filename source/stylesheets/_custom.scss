@@ -217,7 +217,7 @@ a[disabled] {
     right: 0;
     margin-bottom: 15px;
 
-    @include mq('desktop') {
+    @include mq('tablet') {
       position: absolute;
       margin-bottom: 0;
     }
@@ -241,14 +241,12 @@ a[disabled] {
 
   .title-bar{
     background:$grisMedio;
-    color: #fff;
+    color: #000;
     padding: 3px 10px ;
     margin-bottom: 20px;
     border-bottom: none;
     text-align: center;
     text-transform: uppercase;
-
-    color: #fff;
     text-decoration: none;
     font-weight: bold;
   }
@@ -266,7 +264,7 @@ a[disabled] {
       text-align: left;
     }
 
-    @include mq('desktop') {
+    @include mq('tablet') {
       width: 375px;
       padding: 0 20px;
     }
@@ -285,7 +283,7 @@ a[disabled] {
 }
 
 .property-content {
-  @include mq('desktop') {
+  @include mq('tablet') {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
@@ -300,7 +298,25 @@ a[disabled] {
 }
 
 //Slider
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+  z-index: 9;
+  padding: 40px 0 0 0;
+
+  .hidden {
+    display: none;
+    pointer-events: none;
+  }
+}
 .listings-slider-container{
+  margin: 0 auto;
+  display: block;
+
   .jshowoff{
     width: 100%;
 
