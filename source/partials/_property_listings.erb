@@ -1,17 +1,16 @@
 <div class="property">
   <div class="title-bar">
-    <a href="/property-listings/<%= property.property_name.parameterize %>/"><%= property.property_name %> - <%= property.short_address %></a>
+    <%= property.property_name %> - <%= property.short_address %>
   </div>
   <div class="property-content">
     <% if property.cover.present? %>
     <div class="property-image">
-      <a href="/property-listings/<%= property.property_name.parameterize %>/"><%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url %></a>
+      <%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url %>
     </div>
     <% end %>
     <div class="property-description">
-      <%= extract_first_paragraph(property.description) %> <a href="/property-listings/<%= property.property_name.parameterize %>">Learn more >></a>
-      <br/>
-      <span class="price"><%= property.price %></span>
+      <p class="property-status"><%= property.status.title %></p>
+      <%= property.description %>
     </div>
     <div class="pdf-button-container">
       <% if property.attachment %>

@@ -2,7 +2,7 @@
 layout: content
 ---
 <h1>Property Listings</h1>
-<% items.each do |property| %>
+<% items.reject { |item| item.status.title === "Hidden" }.each do |property| %>
   <%= partial "partials/property_listings", :locals => {:property => property} %>
 <% end %>
 

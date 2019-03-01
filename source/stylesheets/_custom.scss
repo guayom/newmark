@@ -248,16 +248,12 @@ a[disabled] {
     text-align: center;
     text-transform: uppercase;
 
-    a{
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      cursor: pointer;
-    }
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
   }
   .property-image{
     width: 170px;
-    cursor: pointer;
   }
   .property-description{
     flex: 1 1;
@@ -265,6 +261,10 @@ a[disabled] {
     box-sizing: border-box;
     padding: 0;
     text-align: left;
+
+    p {
+      text-align: left;
+    }
 
     @include mq('desktop') {
       width: 375px;
@@ -278,6 +278,10 @@ a[disabled] {
     margin-top: 10px;
     display: inline-block;
   }
+}
+
+.property-status {
+  color: $main_color;
 }
 
 .property-content {
@@ -353,9 +357,6 @@ a[disabled] {
     font-weight: bold;
     float: left;
   }
-}
-
-.title-bar-main {
 }
 
 .title-bar-secondary {
