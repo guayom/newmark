@@ -1,1 +1,3 @@
-// This is where it all goes :)
+function turnOnSlider(container) {
+  alert("hi");
+}

@@ -311,6 +311,7 @@ a[disabled] {
   .hidden {
     display: none;
     pointer-events: none;
+    z-index: -999;
   }
 }
 .listings-slider-container{
@@ -392,4 +393,9 @@ a[disabled] {
   @include mq('desktop') {
     display: block;
   }
+}
+
+
+.no-scroll {
+  overflow: hidden;
 }

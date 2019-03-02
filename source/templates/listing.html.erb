@@ -13,16 +13,7 @@
       <a class="button" href="<%= property.attachment.file.to_url %>" target="_blank" download="<%= property.property_name %> - Property listing brochure">Download brochure</a>
     <% end %>
 
-    <% if property.images.count > 0 %>
-      <div class="listings-slider-container">
-        <div class="listings-slider">
-          <% property.images.each do |image| %>
-            <%= image_tag image.image.file.width(320).to_url %>
-          <% end %>
-        </div>
-      </div>
-      <br/>
-    <% end %>
+    
 
     <%= property.description+"<br/><br/>".html_safe unless property.description == "" or  property.description == "no description" %>
 

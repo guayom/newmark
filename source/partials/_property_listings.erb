@@ -4,8 +4,8 @@
   </div>
   <div class="property-content">
     <% if property.cover.present? %>
-    <div class="property-image">
-      <%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url %>
+    <div class="property-image" data-id="<%= property.id %>">
+      <%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url, :class => "modal-toggler", :id => property.id %>
     </div>
     <% end %>
     <div class="property-description">
