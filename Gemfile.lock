@@ -137,7 +137,7 @@ GEM
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
-    rack (2.0.3)
+    rack (2.0.8)
     rack-livereload (0.3.16)
       rack
     rb-fsevent (0.10.2)
