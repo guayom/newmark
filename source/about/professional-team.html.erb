@@ -5,15 +5,19 @@ category: about
 layout: about
 weight: 5
 ---
-<ul class="team-member-list">
-<% dato.members.each do |member| %>
-  <li>
-    <% if member.bio.present? %>
-      <strong><a href="/about/professional-team/<%= member.name.parameterize %>"><%= member.name %></strong></a>
-    <% else %>
-      <strong><%= member.name %></strong>
+<% dato.members.each.group_by { |i| i.department }.each do |key, members| %>
+  <h2><%= key %></h2>
+  <ul class="team-member-list">
+    <% members.each do |member| %>
+      <li>
+        <% if member.bio.present? %>
+          <strong><a href="/about/professional-team/<%= member.name.parameterize %>"><%= member.name %></strong></a>
+        <% else %>
+          <strong><%= member.name %></strong>
+        <% end %>
+        <br/><i><%= member.job_title %></i>
+      </li>
     <% end %>
-    <br/><i><%= member.job_title %></i>
-  </li>
+  </ul>
 <% end %>
-</ul>
+
