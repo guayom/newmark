@@ -35,13 +35,17 @@ end
 
 teamPath = "/about/professional-team/"
 memberTemplate = "/templates/member-template.html"
+memberIndexTemplate = "/templates/member-index-template.html"
+
 dato.members.each do |member|
-  unless member.bio.nil? || member.countries.nil?
-    member.countries.each do |country|
-      proxy "#{teamPath}#{country.name.parameterize}/#{member.name.parameterize}/index.html", 
-            memberTemplate, :locals => {:member => member}, :ignore => true
-    end
+  unless member.bio.nil?
+    proxy "#{teamPath}#{member.name.parameterize}/index.html", memberTemplate, :locals => {:member => member}, :ignore => true
   end
+end
+
+dato.countries.map { |country| country.name }.each do |country|
+  proxy "#{teamPath}#{country.parameterize}/index.html", 
+        memberIndexTemplate, :locals => {:country => country}, :ignore => true
 end
 
 activate :pagination
