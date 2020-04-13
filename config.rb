@@ -48,6 +48,11 @@ dato.countries.map { |country| country.name }.each do |country|
         memberIndexTemplate, :locals => {:country => country}, :ignore => true
 end
 
+dato.listings.each do |listing|
+  proxy "/property-listings/#{listing.property_name.parameterize}/index.html", "/templates/listing.html",
+    locals: { property: listing }
+end
+
 activate :pagination
 paginate dato.listings[0...8], "/property-listings", "/templates/listings.html", suffix: "/page/:num/index", per_page: 5
 
