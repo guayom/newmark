@@ -33,9 +33,14 @@ dato.articles.each do |article|
   proxy "/media-center/press-releases/#{article.title.parameterize}/index.html", "/media-center/press-releases/template.html", :locals => { :article => article }, :ignore => true
 end
 
+teamPath = "/about/professional-team/"
+memberTemplate = "/templates/member-template.html"
 dato.members.each do |member|
-  unless member.bio.nil?
-    proxy "/about/professional-team/#{member.name.parameterize}/index.html", "/templates/member-template.html", :locals => {:member => member}, :ignore => true
+  unless member.bio.nil? || member.countries.nil?
+    member.countries.each do |country|
+      proxy "#{teamPath}#{country.name.parameterize}/#{member.name.parameterize}/index.html", 
+            memberTemplate, :locals => {:member => member}, :ignore => true
+    end
   end
 end
 
