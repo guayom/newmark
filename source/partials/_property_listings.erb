@@ -1,21 +1,24 @@
 <div class="property">
   <div class="title-bar">
-    <%= property.property_name %> - <%= property.short_address %>
+    <a href="/property-listings/<%= property.property_name.parameterize %>/">
+      <%= property.property_name %> - <%= property.short_address %>
+    </a>
   </div>
   <div class="property-content">
     <% if property.cover.present? %>
     <div class="property-image" data-id="<%= property.id %>">
-      <%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url, :class => "modal-toggler", :id => property.id %>
+      <a href="/property-listings/<%= property.property_name.parameterize %>/">
+        <%= image_tag property.cover.file.width(170).height(136).fit("crop").to_url %>
+      </a>
     </div>
     <% end %>
     <div class="property-description">
-      <p class="property-status"><%= property.status.title %></p>
-      <%= property.description %>
-    </div>
-    <div class="pdf-button-container">
-      <% if property.attachment %>
-        <a class="button button-gray" href="<%= property.attachment.file.to_url %>" target="_blank" download="<%= property.property_name %> - Property listing brochure">More information</a>
-      <% end %>
+      <div class="property-description">
+        <%= extract_first_paragraph(property.description) %>
+        <a href="/property-listings/<%= property.property_name.parameterize %>">Learn more >></a>
+        <p class="property-status"><%= property.status.title %></p>
+        <span class="price"><%= property.price %></span>
+      </div>
     </div>
   </div>
 </div>
