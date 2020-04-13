@@ -1,0 +1,20 @@
+<div class="featured-listings">
+  <div class="title-bar">
+    <div class="title-bar-main">
+      <h2>Our Listings</h2>
+    </div>
+    <div class="title-bar-secondary">
+      <a href="/property-listings">See all</a>
+    </div>
+  </div>
+  <ul>
+    <% dato.countries.each do |country| %>
+      <li>
+        <a href="/property-listings/<%= country.name.parameterize %>">
+          <%= image_tag country.image.url(w: 400, h: 300, fit: "crop") %>
+          <%= country.name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>

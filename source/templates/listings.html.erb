@@ -1,19 +1,13 @@
 ---
 layout: content
 ---
-<h1>Property Listings</h1>
-<% items.reject { |item| item.status.title === "Hidden" }.each do |property| %>
+<h1>Property Listings <%= defined?(country) ? " in #{country}" : '' %></h1>
+<%
+  listings = defined?(country) ? dato.listings.select { |listing| (listing.status.title != "Hidden" && !listing.country.nil? && listing.country.name === country) } : dato.listings.select { |listing| listing.status.title != "Hidden" }
+%>
+<% listings.each do |property| %>
   <%= partial "partials/property_listings", :locals => {:property => property} %>
 <% end %>
-
-<% if pager.previous_page %>
-  <%= link_to "Previous page", pager.page_path(pager.previous_page) %>
-<% end %>
-<% if pager.next_page %>
-  <%= link_to "Next page", pager.page_path(pager.next_page) %>
-<% end %>
-
-
 <% content_for(:sidebar) do %>
-  <%= partial 'partials/sidebars/listings', :locals => {property: dato.listings.last}  %>
+  <%= partial 'partials/sidebars/listings_countries', :locals => {currentcountry: defined?(country) ? country : ""}  %>
 <% end %>
