@@ -245,7 +245,7 @@ a[disabled] {
     padding: 3px 10px ;
     margin-bottom: 20px;
     border-bottom: none;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
@@ -395,6 +395,9 @@ a[disabled] {
   }
 }
 
+.fb-page {
+  margin-bottom: 20px;
+}
 
 .no-scroll {
   overflow: hidden;
