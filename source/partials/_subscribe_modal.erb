@@ -1,0 +1,16 @@
+<div class="modal" id="modal">
+    <div class="modal-wrapper">
+        <%= partial "partials/sign_up_form" %>
+        <button class="modal-close-button" onClick="closeModal();">Cancel</button>
+    </div>
+</div>
+<script type="text/javascript">
+    function openModal() {
+        var modal = document.getElementById('modal');
+        modal.classList.add('shown');
+    }
+    function closeModal() {
+        var modal = document.getElementById('modal');
+        modal.classList.remove('shown');
+    }
+</script>

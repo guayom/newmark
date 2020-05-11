@@ -195,6 +195,7 @@ a[disabled] {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  border: 0;
   &:hover{
     background:darken($main_color, 10%);
     color: #fff;

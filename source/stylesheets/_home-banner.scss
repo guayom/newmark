@@ -6,7 +6,7 @@
   @include mq("desktop") {
     display: flex;
     width: $wrapper_width;
-    height: 300px;
+    height: 310px;
     margin: 0 auto;
   }
 }
@@ -14,7 +14,7 @@
 .home-banner-slideshow {
   height: 170px;
   @include mq("desktop") {
-    height: 300px;
+    height: 330px;
     flex: 1 1;
     padding: 20px 20px 40px 20px;
   }
