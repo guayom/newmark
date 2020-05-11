@@ -1,0 +1,14 @@
+<div class="home-banner-top-news">
+    <h2 class="home-banner-title">Top News</h2>
+    <% dato.articles.last(3).each do |article| %>
+        <div class="top-news-item">
+            <div class="top-news-date">
+                <%= article.date %>
+            </div>
+            <%= article.title %>
+            <div class="top-news-read-more">
+                <a href="<%= "/media-center/press-releases/#{article.title.parameterize}" %>">Read more</a>
+            </div>
+        </div>
+    <% end %>
+</div>
