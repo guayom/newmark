@@ -30,15 +30,6 @@ body         { text-align: center; background: #e4e2e1; }
     height: 100px;
   }
 }
-.banner {
-  z-index: 1;
-  margin: 0 auto;
-  width: 100%;
-
-  @include mq('desktop') {
-    width: 980px;
-  }
-}
 
 .header-logo
 {
@@ -156,49 +147,6 @@ body         { text-align: center; background: #e4e2e1; }
   }
 }
 .no-right-column .main-column { padding: 10px 40px 40px 20px; width: 749px; }
-
-.body-txt           { }
-
-
-
-
-
-/* -------------------- =Home banner --------------------*/
-
-.home .banner       { display: none; margin: 0; }
-.home-banner-wrap   {
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 0;
-  height: auto;
-  width: 100%;
-  background: #fff url(../images/ajax-loader2.gif) no-repeat 50%;
-
-  @include clearfix;
-
-  @include mq('desktop'){
-    width: 980px;
-    height: 300px;
-  }
-
-  img {
-    max-width: 100%;
-  }
-}
-
-.home-banner-wrap .jshowoff               {
-  margin: 0 0 0 0;
-  width: 100%;
-  height: auto !important;
-  background: #fff;
-
-  @include mq('desktop') {
-    height: 1px;
-  }
-}
-.home-banner-wrap .jshowoff-slidelinks a  { display: none; }
-.home-banner-wrap .jshowoff-prev,
-.home-banner-wrap .jshowoff-next          { display: none; }
 
 /* =Home */
 
