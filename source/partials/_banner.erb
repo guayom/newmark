@@ -1,8 +1,19 @@
 <div class="home-banner-wrap">
   <div class="home-banner-slideshow">
     <div class="banner">
-      <% dato.home_sliders.each do |imagen| %>
-        <%= image_tag imagen.image.url(w: 660, h: 270, fit: "crop", fm: :jpg) %>
+      <% dato.home_sliders.each do |item| %>
+        <div class="banner-item">
+          <div class="banner-image">
+            <%= image_tag item.image.url(w: 660, h: 270, fit: "crop", fm: :jpg) %>
+          </div>
+          <div class="banner-text">
+            <div>
+              <h3><%= item.heading %></h3>
+              <p><%= item.body %></p>
+              <a class="button extended" href="<%= item.link %>">READ MORE</a>
+            </div>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>
