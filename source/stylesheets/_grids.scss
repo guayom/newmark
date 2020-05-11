@@ -1,0 +1,14 @@
+.flex {
+    display: block;
+
+    @include mq("desktop") {
+        display: flex;
+        flex-direction: row;
+        margin: 0 -10px;
+    }    
+}
+
+.column {
+    flex: 1 1;
+    margin: 10px;
+}
