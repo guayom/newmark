@@ -38,6 +38,7 @@ memberTemplate = "/templates/member-template.html"
 memberIndexTemplate = "/templates/member-index-template.html"
 listingsPath = "/property-listings/"
 listingsIndexTemplate = "/templates/listings.html"
+countryTemplate = "/templates/country.html"
 
 dato.members.each do |member|
   unless member.bio.nil?
@@ -48,8 +49,8 @@ end
 dato.countries.map { |country| country.name }.each do |country|
   proxy "#{teamPath}#{country.parameterize}/index.html", 
         memberIndexTemplate, :locals => {:country => country}, :ignore => true
-  proxy "#{listingsPath}#{country.parameterize}/index.html", 
-        listingsIndexTemplate, :locals => {:country => country}, :ignore => true
+  proxy "#{country.parameterize}/index.html", 
+        countryTemplate, :locals => {:country => country}, :ignore => true
 end
 
 dato.listings.each do |listing|

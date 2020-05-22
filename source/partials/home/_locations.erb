@@ -9,7 +9,7 @@
 	</div>
 	<div class="country-buttons-container">
 		<% dato.countries.each do |country| %>
-			<a href="<%= country.abbreviation %>" class="country-button">
+			<a href="<%= country.name.parameterize %>" class="country-button">
 				<%= country.abbreviation %>
 			</a>
 		<% end %>

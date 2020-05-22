@@ -1,0 +1,8 @@
+---
+layout: content
+---
+Country
+
+<% content_for(:sidebar) do %>
+  <%= partial 'partials/sidebars/countries', :locals => {currentcountry: defined?(country) ? country : ""}  %>
+<% end %>
