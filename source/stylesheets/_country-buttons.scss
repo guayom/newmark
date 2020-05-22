@@ -1,0 +1,30 @@
+$countyBtnSize: 50px;
+$countryBtnMargin: 10px;
+
+.country-buttons-container {
+    display: flex;
+    margin: 0 -$countryBtnMargin;
+    flex-wrap: wrap;
+}
+
+.country-button {
+    flex-basis:$countyBtnSize;
+    margin: $countryBtnMargin;
+    display: inline-block;
+    background: $main_color;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: $countyBtnSize;
+    height: $countyBtnSize;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+        color: #fff;
+        background:darken($main_color, 10%);
+    }
+}
