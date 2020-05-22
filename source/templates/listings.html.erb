@@ -24,6 +24,7 @@ layout: content
 
   <% content_for(:sidebar) do %>
     <%= partial 'partials/sidebars/countries', :locals => {currentcountry: defined?(country) ? country : ""}  %>
+    <%= partial 'partials/search-form', :locals => {currentcountry: defined?(country) ? country : ""}  %>
   <% end %>
 <% else %>
   <h2>Property listings</h2>

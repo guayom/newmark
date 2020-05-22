@@ -1,0 +1,65 @@
+<div id="listings-search"></div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+        };
+
+        var params = [
+            { 
+                key: 'category',
+                value: getUrlParameter('category')
+            }, 
+            { 
+                key: 'country',
+                value: getUrlParameter('country')
+            },
+            { 
+                key: 'keywords',
+                value: getUrlParameter('keywords')
+            }
+        ]
+
+        for(i = 0; i < params.length ; i++) {
+            $('#' + params[i].key).val(params[i].value)
+        }
+
+        function findKeywords(title) {
+            var keywordsParam = getUrlParameter('keywords')
+            if(keywordsParam === "") {
+                return true
+            } else {
+                return title.toLowerCase().includes(keywordsParam.toLowerCase())
+            }
+        }
+
+        function findCountry(country) {
+            var countyParam = decodeURI(getUrlParameter('country'))
+            return country === decodeURI(getUrlParameter('country'))
+        }
+
+        $.getJSON('/listings.json', function(data) {
+            $.each(data.listings, function(index, listing) {
+                var matchesTitle = findKeywords(listing.property_name);
+                var matchesCountry = findCountry(listing.country);
+
+                if(matchesTitle && matchesCountry) {
+                    $('#listings-search').append($('<div>', {
+                    text: listing.property_name
+                }));
+                }
+            });
+        });
+    })
+</script>

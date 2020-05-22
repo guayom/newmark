@@ -39,6 +39,8 @@ memberIndexTemplate = "/templates/member-index-template.html"
 listingsPath = "/property-listings/"
 listingsIndexTemplate = "/templates/listings.html"
 countryTemplate = "/templates/country.html"
+servicesTemplate = "/templates/service-template.html"
+servicesPath = "/services/"
 
 dato.members.each do |member|
   unless member.bio.nil?
@@ -60,6 +62,11 @@ end
 dato.listings.each do |listing|
   proxy "#{listingsPath}#{listing.property_name.parameterize}/index.html", "/templates/listing.html",
     locals: { property: listing }
+end
+
+dato.services.each do |service|
+  proxy "#{servicesPath}#{service.title.parameterize}/index.html", servicesTemplate,
+    locals: { service: service }
 end
 
 activate :pagination
@@ -95,6 +102,17 @@ helpers do
 
   def extract_first_paragraph(string)
     Nokogiri::HTML.parse(string).css('p').first.text
+  end
+
+  def listings_as_json
+    dato.listings.select{ |l| l.status != "Hidden" }.map { |listing|
+      ({
+        property_name: listing.property_name,
+        categories: listing.categories.map{ |cat| cat.title },
+        country: listing.country.name,
+        description: listing.description
+      })
+    }.to_json
   end
 
 end

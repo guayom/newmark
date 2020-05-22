@@ -107,14 +107,14 @@ body         { text-align: center; background: #e4e2e1; position: relative; }
 .left-column  {
   background: #f9f9f9;
   box-sizing: border-box;
-  padding: 10px 20px 15px 20px;
+  padding: 10px 0 15px;
   width: 100%;
 
   @include mq('desktop') {
     background: #fff;
     box-sizing: border-box;
     width: 171px;
-    padding: 20px;
+    padding: 20px 0;
   }
 }
 .main-column  {
@@ -512,6 +512,7 @@ ul.fly-out
 
   @include mq('desktop') {
     margin: 0 0 30px;
+    padding: 0 20px;
   }
 
   h4 {
@@ -530,10 +531,6 @@ ul.fly-out
     padding: 5px;
     border-box: content-box;
     height: auto;
-
-    @include mq('desktop') {
-      display: none;
-    }
   }
 
   ul {

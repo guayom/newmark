@@ -1,0 +1,24 @@
+<ul>
+    <li>
+        <form method="get" action="/property-listings/search/" class="search-form">
+            <h4>Search</h4>
+            <label for="keywords">Keywords</label>
+            <input type="text" id="keywords" name="keywords" />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <% dato.countries.each do |category| %>
+                    <option value="<%= category.name %>"><%= category.name %></option>
+                <% end %>
+            </select>
+            <label for="category">Category</label>
+            <select id="category" name="category">
+                <% dato.categories.each do |category| %>
+                    <option value="<%= category.title %>"><%= category.title %></option>
+                <% end %>
+            </select>
+            <br />
+            <br />
+            <button type="submit" class="button">Search</button>
+        </form>
+    </li>
+</ul>
