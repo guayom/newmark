@@ -1,4 +1,4 @@
-<h2><%= currentcountry != "" ? "Other " : "" %>Countries</h2>
+<h4><%= currentcountry != "" ? "Other " : "" %>Countries</h4>
 <% countries = defined?(currentcountry) ? dato.countries.select{ |c| c.name != currentcountry} : dato.countries %>
 <ul>
     <% countries.each do |country| %>
