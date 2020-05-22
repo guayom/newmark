@@ -1,7 +1,7 @@
 ---
 layout: about
 ---
-<% dato.members.select { |member| member.countries.map { |country| country.name }.include?(country)}.each.group_by { |i| i.department }.each do |key, members| %>
+<% dato.members.select { |member| member.countries.map { |country| country.name }.include?(country.name)}.each.group_by { |i| i.department }.each do |key, members| %>
   <h2><%= key %></h2>
   <ul class="team-member-list">
     <% members.each do |member| %>
@@ -15,4 +15,7 @@ layout: about
       </li>
     <% end %>
   </ul>
+<% end %>
+<% content_for(:sidebar) do %>
+  <%= partial 'partials/sidebars/countries', :locals => {currentcountry: defined?(country) ? country : ""}  %>
 <% end %>

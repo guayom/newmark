@@ -1,11 +1,9 @@
-<h2><%= currentcountry != "" ? "Other " : "" %>Countries</h2>
-<% countries = defined?(currentcountry) ? dato.countries.select{ |c| c.name != currentcountry} : dato.countries %>
+<a href="/<%= currentcountry.name.parameterize %>"><h2><%= currentcountry.name %></h2></a>
 <ul>
-    <% dato.countries.each do |country| %>
-        <li class="<%= "current" if currentcountry === country.name %>">
-            <a href="<%= country.name.parameterize %>">
-                <%= country.name %>
-            </a>
-        </li>
-    <% end %>
+    <li>
+        <a href="/about/professional-team/<%= currentcountry.name.parameterize %>">Professional team</a>
+    </li>
+    <li>
+        <a href="/property-listings/<%= currentcountry.name.parameterize %>"> Property Listings</a>
+    </li>
 </ul>

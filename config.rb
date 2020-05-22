@@ -46,10 +46,14 @@ dato.members.each do |member|
   end
 end
 
-dato.countries.map { |country| country.name }.each do |country|
-  proxy "#{teamPath}#{country.parameterize}/index.html", 
+dato.countries.each do |country|
+  proxy "#{listingsPath}#{country.name.parameterize}/index.html", 
+        listingsIndexTemplate, :locals => {:country => country}, :ignore => true
+
+  proxy "#{teamPath}#{country.name.parameterize}/index.html", 
         memberIndexTemplate, :locals => {:country => country}, :ignore => true
-  proxy "#{country.parameterize}/index.html", 
+
+  proxy "#{country.name.parameterize}/index.html", 
         countryTemplate, :locals => {:country => country}, :ignore => true
 end
 

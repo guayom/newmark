@@ -1,13 +1,13 @@
 ---
 layout: content
 ---
-<h1>Property Listings <%= defined?(country) ? " in #{country}" : '' %></h1>
+<h1>Property Listings <%= defined?(country) ? " in #{country.name}" : '' %></h1>
 <%
-  listings = defined?(country) ? dato.listings.select { |listing| (listing.status.title != "Hidden" && !listing.country.nil? && listing.country.name === country) } : dato.listings.select { |listing| listing.status.title != "Hidden" }
+  listings = defined?(country) ? dato.listings.select { |listing| (listing.status.title != "Hidden" && !listing.country.nil? && listing.country.name === country.name) } : dato.listings.select { |listing| listing.status.title != "Hidden" }
 %>
 <% listings.each do |property| %>
   <%= partial "partials/property_listings", :locals => {:property => property} %>
 <% end %>
 <% content_for(:sidebar) do %>
-  <%= partial 'partials/sidebars/listings_countries', :locals => {currentcountry: defined?(country) ? country : ""}  %>
+  <%= partial 'partials/sidebars/countries', :locals => {currentcountry: defined?(country) ? country : ""}  %>
 <% end %>

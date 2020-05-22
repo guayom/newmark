@@ -1,8 +1,8 @@
 ---
 layout: content
 ---
-Country
-
+<h2><%= country.name %></h2>
+<%= country.description %>
 <% content_for(:sidebar) do %>
   <%= partial 'partials/sidebars/countries', :locals => {currentcountry: defined?(country) ? country : ""}  %>
 <% end %>
