@@ -1,13 +1,37 @@
 ---
 layout: content
 ---
-<h1>Property Listings <%= defined?(country) ? " in #{country.name}" : '' %></h1>
-<%
-  listings = defined?(country) ? dato.listings.select { |listing| (listing.status.title != "Hidden" && !listing.country.nil? && listing.country.name === country.name) } : dato.listings.select { |listing| listing.status.title != "Hidden" }
-%>
-<% listings.each do |property| %>
-  <%= partial "partials/property_listings", :locals => {:property => property} %>
-<% end %>
-<% content_for(:sidebar) do %>
-  <%= partial 'partials/sidebars/countries', :locals => {currentcountry: defined?(country) ? country : ""}  %>
+<% if defined?(country) %>
+  <%
+    featured_listings = dato.listings.select { |listing| (listing.status.title != "Hidden" && !listing.country.nil? && listing.country.name === country.name && listing.featured === true) }
+  %>
+  <% if featured_listings.any? %>
+    <h1>Featured Property Listings <%= defined?(country) ? " in #{country.name}" : '' %></h1>
+    <% featured_listings.each do |property| %>
+      <%= partial "partials/property_listings", :locals => {:property => property} %>
+    <% end %>
+  <% end %>
+
+  <%
+    listings = defined?(country) ? dato.listings.select { |listing| (listing.status.title != "Hidden" && !listing.country.nil? && listing.country.name === country.name && listing.featured != true) } : dato.listings.select { |listing| listing.status.title != "Hidden" }
+  %>
+  <% if listings.any? %>
+    <h1>Property Listings <%= defined?(country) ? " in #{country.name}" : '' %></h1>
+    <% listings.each do |property| %>
+      <%= partial "partials/property_listings", :locals => {:property => property} %>
+    <% end %>
+  <% end %>
+
+  <% content_for(:sidebar) do %>
+    <%= partial 'partials/sidebars/countries', :locals => {currentcountry: defined?(country) ? country : ""}  %>
+  <% end %>
+<% else %>
+  <h2>Property listings</h2>
+  <% dato.countries.map{ |country| country.name}.each do |country| %>
+  <div>
+    <a href="/property-listings/<%= country.parameterize %>">
+      <%= country %>
+    </a>
+  </div>
+  <% end %>
 <% end %>
